@@ -145,18 +145,17 @@ LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-ACCOUNT_ACTIVATION_DAYS = '30'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 
-EMAIL_HOST_USER = config('EMAIL_LOGIN')
-EMAIL_HOST_PASSWORD = config('EMAIL_PASS')
+EMAIL_HOST_USER = 'fotihlatipov@gmail.com'
+EMAIL_HOST_PASSWORD = 'fotihlatipov2002'
 
+ACCOUNT_ACTIVATION_DAYS = 7
+REGISTRATION_AUTO_LOGIN = True
 
 REST_FRAMEWORK = {
-    # Use Django's standard `django.contrib.auth` permissions,
-    # or allow read-only access for unauthenticated users.
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.AllowAny'
     ],

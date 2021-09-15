@@ -6323,7 +6323,7 @@ button:hover {
       .comment-form .email {
         padding-left: 0px; }
         .cats{
-            width:350px;
+            width:100% auto;
             height:222px
         }
         .deal-title2{
@@ -6332,7 +6332,12 @@ button:hover {
          font-weight: 600;
          font-size: 30px;
         }
-
+        .overlay{
+           display:none
+        }
+        .deal-title{
+            display:none
+        }
          }
   .comment-form .form-control {
     padding: 8px 20px;
