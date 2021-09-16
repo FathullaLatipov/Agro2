@@ -16,6 +16,7 @@ urlpatterns += i18n_patterns(
     path('orders/', include('orders.urls', namespace='orders')),
     path('profile/', include('users.urls', namespace='profile')),
     path('products/', include('products.urls', namespace='products')),
+    path('neo/', include('neo.urls', namespace='neo'),),
     path('', include('pages.urls', namespace='contact')),
 )
 

@@ -1,5 +1,6 @@
-from django.urls import path
+from django.urls import path, include
 
+from neo.views import NeoTemplateView
 from products.views import ProductsListView, ProductDetailView, CommentCreateView, WishlistListView, \
     add_to_cart, CartListView,  add_to_wishlist
 

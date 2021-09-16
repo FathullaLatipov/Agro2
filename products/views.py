@@ -3,7 +3,7 @@ from django.db.models import Max, Min
 from django.http import HttpResponse, JsonResponse
 from django.shortcuts import get_object_or_404, redirect
 from django.urls import reverse
-from django.views.generic import ListView, DetailView, CreateView
+from django.views.generic import ListView, DetailView, CreateView, TemplateView
 from rest_framework.response import Response
 
 from products.forms import CommentModelForm
@@ -118,6 +118,7 @@ def add_to_wishlist(request, pk):
 
     data['wishlist_len'] = get_cart_data(wishlist)
     return JsonResponse(data)
+
 
 
 class WishlistListView(ListView):
