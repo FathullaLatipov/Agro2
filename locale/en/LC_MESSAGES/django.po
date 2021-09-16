@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-10 12:20+0500\n"
+"POT-Creation-Date: 2021-09-16 19:04+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,15 +18,15 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: .\agro\settings.py:108
+#: .\agro\settings.py:111
 msgid "English"
 msgstr ""
 
-#: .\agro\settings.py:109
+#: .\agro\settings.py:112
 msgid "Russian"
 msgstr ""
 
-#: .\agro\settings.py:110
+#: .\agro\settings.py:113
 msgid "Uzbek"
 msgstr ""
 
@@ -180,10 +180,8 @@ msgstr ""
 #: .\templates\checkout.html:12 .\templates\checkout2.html:13
 #: .\templates\contact.html:12 .\templates\history.html:12
 #: .\templates\layouts\footer.html:353 .\templates\layouts\header.html:63
-#: .\templates\registration\login.html:12
-#: .\templates\registration\registration_form.html:15 .\templates\shop.html:16
-#: .\templates\shopping-cart.html:13 .\templates\single-product.html:13
-#: .\templates\wishlist.html:12
+#: .\templates\shop.html:16 .\templates\shopping-cart.html:13
+#: .\templates\single-product.html:13 .\templates\wishlist.html:12
 msgid "Home"
 msgstr ""
 
@@ -293,39 +291,19 @@ msgstr "Сoll center"
 msgid "Политика возврата"
 msgstr "Return policy"
 
-#: .\templates\index.html:218
-msgid "Category"
-msgstr ""
-
-#: .\templates\index.html:231 .\templates\index.html:236
-msgid "Fruits"
-msgstr ""
-
-#: .\templates\index.html:253 .\templates\index.html:258
-msgid "Vegetables"
-msgstr ""
-
-#: .\templates\index.html:274 .\templates\index.html:279
-msgid "Parsley"
-msgstr ""
-
-#: .\templates\index.html:295 .\templates\index.html:300
-msgid "Dried fruits"
-msgstr ""
-
-#: .\templates\index.html:321
+#: .\templates\index.html:286
 msgid "Latest Products"
 msgstr ""
 
-#: .\templates\index.html:384
+#: .\templates\index.html:349
 msgid "Hours"
 msgstr ""
 
-#: .\templates\index.html:410
+#: .\templates\index.html:375
 msgid "Minutes"
 msgstr ""
 
-#: .\templates\index.html:436
+#: .\templates\index.html:401
 msgid "Seconds"
 msgstr ""
 
@@ -428,28 +406,30 @@ msgstr ""
 #, python-format
 msgid ""
 "\n"
-"    Вы  попросили зарегистрировать учетную запись на\n"
-"    %(site_name)s. Если это не вы, проигнорируйте это электронное письмо, и "
-"ваш адрес будет удален из наших записей.\n"
+"    You (or someone pretending to be you) have asked to register an account "
+"at\n"
+"    %(site_name)s.  If this wasn't you, please ignore this email\n"
+"    and your address will be removed from our records.\n"
 "    "
 msgstr ""
 
-#: .\templates\registration\activation_email.html:17
+#: .\templates\registration\activation_email.html:18
 #, python-format
 msgid ""
 "\n"
-"Чтобы активировать эту учетную запись, щелкните следующую ссылку в "
-"следующем\n"
+"    To activate this account, please click the following link within the "
+"next\n"
 "    %(expiration_days)s days:\n"
 "    "
 msgstr ""
 
-#: .\templates\registration\activation_email.html:29
+#: .\templates\registration\activation_email.html:30
+#: .\templates\registration\admin_approve_email.html:23
 #, python-format
 msgid ""
 "\n"
-"    С уважением Тест с компании\n"
-"    %(site_name)s Mененджер\n"
+"    Sincerely,\n"
+"    %(site_name)s Management\n"
 "    "
 msgstr ""
 
@@ -457,26 +437,25 @@ msgstr ""
 #, python-format
 msgid ""
 "\n"
-"Вы попросили зарегистрировать учетную запись на\n"
-"%(site_name)s.  Если это не вы, проигнорируйте это электронное письмо, и ваш "
-"адрес будет удален из наших записей.\n"
+"You (or someone pretending to be you) have asked to register an account at\n"
+"%(site_name)s.  If this wasn't you, please ignore this email\n"
+"and your address will be removed from our records.\n"
 msgstr ""
 
-#: .\templates\registration\activation_email.txt:6
+#: .\templates\registration\activation_email.txt:7
 #, python-format
 msgid ""
 "\n"
-"Чтобы активировать эту учетную запись, щелкните следующую ссылку в "
-"следующем\n"
+"To activate this account, please click the following link within the next\n"
 "%(expiration_days)s days:\n"
 msgstr ""
 
-#: .\templates\registration\activation_email.txt:13
+#: .\templates\registration\activation_email.txt:14
 #, python-format
 msgid ""
 "\n"
-"С уважением Test с компании\n"
-"%(site_name)s\n"
+"Sincerely,\n"
+"%(site_name)s Management\n"
 msgstr ""
 
 #: .\templates\registration\activation_email_subject.txt:1
@@ -541,15 +520,6 @@ msgstr ""
 msgid "click here"
 msgstr ""
 
-#: .\templates\registration\admin_approve_email.html:23
-#, python-format
-msgid ""
-"\n"
-"    Sincerely,\n"
-"    %(site_name)s Management\n"
-"    "
-msgstr ""
-
 #: .\templates\registration\admin_approve_email.txt:2
 #, python-format
 msgid ""
@@ -568,23 +538,24 @@ msgstr ""
 msgid "Account approval on"
 msgstr ""
 
-#: .\templates\registration\login.html:10
-#: .\templates\registration\login.html:13
-#: .\templates\registration\login.html:40
-msgid "Login"
+#: .\templates\registration\login.html:4 .\templates\registration\login.html:11
+msgid "Log in"
 msgstr ""
 
-#: .\templates\registration\login.html:61
-#: .\templates\registration\registration_form.html:68
-msgid "Keep me logged in"
+#: .\templates\registration\login.html:15
+msgid "Forgot your password?"
 msgstr ""
 
-#: .\templates\registration\login.html:65
-msgid "Log In"
+#: .\templates\registration\login.html:15
+msgid "Reset it"
 msgstr ""
 
-#: .\templates\registration\login.html:66
-msgid "Forgot Password?"
+#: .\templates\registration\login.html:16
+msgid "Not a member?"
+msgstr ""
+
+#: .\templates\registration\login.html:16
+msgid "Register"
 msgstr ""
 
 #: .\templates\registration\logout.html:4
@@ -680,11 +651,11 @@ msgid "Management"
 msgstr ""
 
 #: .\templates\registration\password_reset_form.html:4
-#: .\templates\registration\password_reset_form.html:21
+#: .\templates\registration\password_reset_form.html:15
 msgid "Reset password"
 msgstr ""
 
-#: .\templates\registration\password_reset_form.html:14
+#: .\templates\registration\password_reset_form.html:8
 msgid ""
 "\n"
 "    Forgot your password? Enter your email in the form below and we'll send "
@@ -700,35 +671,25 @@ msgstr ""
 msgid "Sorry, but registration is closed at this moment. Come back later."
 msgstr ""
 
-#: .\templates\registration\registration_complete.html:5
-msgid "Активация отправлена на вашу почту)"
+#: .\templates\registration\registration_complete.html:4
+msgid "Activation email sent"
 msgstr ""
 
-#: .\templates\registration\registration_complete.html:30
-#: .\templates\registration\registration_form.html:42
-msgid "Register"
+#: .\templates\registration\registration_complete.html:7
+msgid "Please check your email to complete the registration process."
 msgstr ""
 
-#: .\templates\registration\registration_complete.html:33
-msgid "Ссылка на подтверждения отправлено на ваш email"
+#: .\templates\registration\registration_form.html:4
+msgid "Register for an account"
 msgstr ""
 
-#: .\templates\registration\registration_complete.html:35
-#: .\templates\registration\registration_form.html:72
-msgid "Sign In"
-msgstr ""
-
-#: .\templates\registration\registration_complete.html:36
-msgid "Back to web site"
-msgstr ""
-
-#: .\templates\registration\registration_form.html:13
-#: .\templates\registration\registration_form.html:16
+#: .\templates\registration\registration_form.html:12
 msgid "Registration Page"
 msgstr ""
 
-#: .\templates\registration\registration_form.html:27
-msgid "Registration"
+#: .\templates\registration\registration_form.html:26
+#: .\templates\registration\resend_activation_form.html:10
+msgid "Submit"
 msgstr ""
 
 #: .\templates\registration\resend_activation_complete.html:4
@@ -745,10 +706,6 @@ msgstr ""
 
 #: .\templates\registration\resend_activation_form.html:4
 msgid "Resend Activation Email"
-msgstr ""
-
-#: .\templates\registration\resend_activation_form.html:10
-msgid "Submit"
 msgstr ""
 
 #: .\templates\shop.html:38

@@ -1,9 +1,15 @@
-{% extends 'layouts/base.html' %}
-{% load static %}
+{% extends "registration/registration_base.html" %}
 {% load i18n %}
+{% load static %}
+
+{% block title %}{% trans "Log in" %}{% endblock %}
+
 {% block content %}
-	<!-- Start Banner Area -->
-	<section class="banner-area organic-breadcrumb">
+<form method="post" action="">
+    {% csrf_token %}
+    <input type="hidden" name="next" value="{{ next }}"/>
+<!--    {{ form.as_p }}-->
+   <section class="banner-area organic-breadcrumb">
 		<div class="container">
 			<div class="breadcrumb-banner d-flex flex-wrap align-items-center justify-content-end">
 				<div class="col-first">
@@ -38,8 +44,6 @@
 				<div class="col-lg-6">
 					<div class="login_form_inner">
 						<h3>{% trans 'Login' %}</h3>
-						<form class="row login_form"  method="post" >
-							{% csrf_token %}
 							{% for field in form %}
 								{% for error in field.errors %}
 									<p class="error">{{ error }}</p>
@@ -50,10 +54,10 @@
 							{% endfor %}
 							<input  type="hidden" name="next" value="{{ next }}" />
 							<div class="col-md-12 form-group" style="padding:5px">
-								<input type="text" class="form-control" style="font-size:2rem"  name="username" placeholder="Username" >
+								<input name="username" type="text" class="form-control" style="font-size:2rem;width:80%;margin:auto"   placeholder="Username" id="username">
 							</div>
 							<div class="col-md-12 form-group" style="padding:5px">
-								<input type="password" class="form-control" style="font-size:2rem"  name="password" placeholder="Password" >
+								<input name="password"  type="password" class="form-control" style="font-size:2rem;width:80%;margin:auto"  placeholder="Password" id="password">
 							</div>
 							<div class="col-md-12 form-group">
 								<div class="creat_account">
@@ -62,10 +66,10 @@
 								</div>
 							</div>
 							<div class="col-md-12 form-group">
-								<a class="primary-btn" style="color:#fff" type="submit" value="submit" href="{% url 'registration_register' %}">{% trans 'Log In' %}</a>
-								<a href="{% url 'auth_password_reset' %}">{% trans 'Forgot Password?' %}</a>
+								<a href="{% url 'registration_register' %}">
+                                    <button class="btn primary-btn fa-1x" type="submit">{% trans 'Log In' %}</button></a>
 							</div>
-						</form>
+                        <a href="/" style="color:#000">Back to web site</a>
 							{% for message in messages %}
 								<p id="messages">{{message}}</p>
 							{% endfor %}
@@ -74,5 +78,35 @@
 			</div>
 		</div>
 	</section>
-	<!--================End Login Box Area =================-->
+</form>
+
 {% endblock %}
+
+
+{% comment %}
+**registration/login.html**
+
+It's your responsibility to provide the login form in a template called
+registration/login.html by default. This template gets passed four
+template context variables:
+
+``form``
+    A Form object representing the login form. See the forms
+    documentation for more on Form objects.
+
+``next``
+    The URL to redirect to after successful login. This may contain a
+    query string, too.
+
+``site``
+    The current Site, according to the SITE_ID setting. If you don't
+    have the site framework installed, this will be set to an instance
+    of RequestSite, which derives the site name and domain from the
+    current HttpRequest.
+
+``site_name``
+    An alias for site.name. If you don't have the site framework
+    installed, this will be set to the value of
+    request.META['SERVER_NAME']. For more on sites, see The
+    "sites" framework.
+{% endcomment %}

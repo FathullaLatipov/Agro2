@@ -162,9 +162,7 @@
       </nav>
     </div>
   </section>
- End banner Area
 
- start features Area
 
 <section class="features-area section_gap p-5 ">
     <div class="container">
@@ -214,97 +212,62 @@
 
 <!-- Start category Area -->
 <section class="category-area">
-    <div class="container-fluid">
-        <h1 class="text-center mb-0" style="font-weight:600;font-family:'Spartan', sans-serif">{% trans 'Category' %}</h1>
+    <div class="container">
+         <h3 class="text-center">Category</h3>
         <div class="row justify-content-center">
             <div class="col-lg-8 col-md-12">
                 <div class="row">
-                    <div class="col-lg-8 col-md-8">
-                        <div data-aos="fade-right">
-                             <a href="products/?category=1">
-                            <div class="single-deal">
-                                <div class="overlay"></div>
-                                <img class="cats img-fluid" src="{% static 'img/category/Rectangle 79.png' %}"
-                                     style="border-radius:20px;" alt="">
+                    <div class="col-lg-6 col-md-6">
+                        <a href="products/?category=1#men"  >
+                         <div class="single-deal">
+                            <div class="overlay"></div>
+                              <img class="img-fluid w-100" src="{% static 'img/category/frukti.jpg' %}" alt="">
                                 <div class="deal-details">
                                     {% for cat in cats %}
-                                    <h6 class="deal-title" style="font-family:'Spartan', sans-serif;font-weight:600">{% trans 'Fruits' %}</h6>
+                                         <h6 class="deal-title">Для мальчиков</h6>
                                     {% endfor %}
                                 </div>
-                            </div>
-                                    {% for cat in cats %}
-                                    <h6 class="deal-title2">{% trans 'Fruits' %}</h6>
-                                    {% endfor %}
-                        </a>
-                        </div>
+                          </div>
+                         </a>
                     </div>
-                    <div class="col-lg-4 col-md-4">
-                        <div class="single-deal">
-                            <div data-aos="fade-left">
-                                <a href="/products/?category=2">
-                            <div class="overlay" style="height:85%;margin-top:9%"></div>
-                            <br>
-                            <img class="cats img-fluid" src="{% static 'img/category/Rectangle 80.png' %}"
-                                 style="border-radius:20px;height: 243px;" alt="">
-
+                   <div class="col-lg-6 col-md-6">
+                        <a href="products/?category=1#men"  >
+                         <div class="single-deal">
+                            <div class="overlay" style="border-radius:20px"></div>
+                              <img class="img-fluid w-100" style="border-radius:20px" src="{% static 'img/category/vegetables.jpg' %}" alt="">
                                 <div class="deal-details">
                                     {% for cat in cats %}
-                                    <h6 class="deal-title" style="font-family:'Spartan', sans-serif;font-weight:600">
-                                        {% trans 'Vegetables' %}</h6>
+                                         <h6 class="deal-title">Для мальчиков</h6>
                                     {% endfor %}
                                 </div>
-                                 {% for cat in cats %}
-                                    <h6 class="deal-title2" style="font-family:'Spartan', sans-serif;font-weight:600">
-                                        {% trans 'Vegetables' %}</h6>
-                                    {% endfor %}
+                          </div>
+                         </a>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="single-deal">
+                            <div class="overlay" style="width:350px;height:234px"></div>
+                            <img class="img-fluid w-100" style="border-radius:20px" src="{% static 'img/category/zeleny.jpg' %} " alt="">
+                            <a href="{% static 'img/category/c3.jpg' %} " class="img-pop-up" target="_blank">
+                                <div class="deal-details">
+                                    <h6 class="deal-title">Product for Couple</h6>
+                                </div>
                             </a>
                         </div>
-                        </div>
                     </div>
-                    <div class="col-lg-4 col-md-4">
+                    <div class="col-lg-6 col-md-6">
                         <div class="single-deal">
-                            <div data-aos="fade-right">
-                                 <a href="/products/?category=4">
-                            <div class="overlay" style="height:85%;margin-top:9%"></div>
-                            <br>
-                            <img class="cats img-fluid" src="{% static 'img/category/Rectangle 82.png' %}"
-                                 style="border-radius:20px;height: 242px;" alt="">
-
+                            <div class="overlay"></div>
+                            <img class="img-fluid w-100" src="{% static 'img/category/suxofrukti.jpg' %} " alt="">
+                            <a href="{% static 'img/category/c3.jpg' %} " class="img-pop-up" target="_blank">
                                 <div class="deal-details">
-                                    <h6 class="deal-title" style="font-family:'Spartan', sans-serif;font-weight:600">{% trans 'Parsley' %}</h6>
+                                    <h6 class="deal-title">Product for Couple</h6>
                                 </div>
-
-                                    {% for cat in cats %}
-                                    <h6 class="deal-title2" style="font-family:'Spartan', sans-serif;font-weight:600">
-                                        {% trans 'Parsley' %}</h6>
-                                    {% endfor %}
-                                     </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-8 col-md-8">
-                        <div data-aos="fade-left">
-                             <a href="/products/?category=3">
-                            <div class="single-deal">
-                                <div class="overlay" style="background:"></div>
-                                <img class="cats img-fluid " src="{% static 'img/category/Rectangle 81.png' %}"
-                                     style="border-radius:20px;" alt="">
-                                <div class="deal-details">
-                                    {% for cat in cats %}
-                                    <h6 class="deal-title" style="font-family:'Spartan', sans-serif;font-weight:600">
-                                        {% trans 'Dried fruits' %}</h6>
-                                    {% endfor %}
-                                </div>
-                                 {% for cat in cats %}
-                                    <h6 class="deal-title2" style="font-family:'Spartan', sans-serif;font-weight:600;padding:20px">
-                                        {% trans 'Dried fruits' %}</h6>
-                                    {% endfor %}
-                            </div>
-                        </a>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
 </section>

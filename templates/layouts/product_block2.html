@@ -95,8 +95,7 @@
             </div>
             <div class="container">
                 <div class="prd-bottom" style="padding:0px 25px;margin-top:10%">
-                    <a style="color:#fff;font-weight:500;border-radius:50px"
-                       href="{% url 'products:add-cart' pk=product.pk %}?next={{request.path}}{{request.GET.urlencode}}"
+                    <a style="color:#fff;font-weight:500;border-radius:50px"  onclick="add_to_cart(this, {{ product.pk }})"
                        class="social-info">
                         {% if product|in_cart:request %}
                         <span class="ti-bag" style="background-color:#EB5757;padding:10px;border-radius:50%"></span>
@@ -109,13 +108,13 @@
                         {% endif %}
                     </a>
 
-                    <a href="{% url 'products:add-wishlist' pk=product.pk %}?next={{ request.path }}?{{request.GET.urlendcode }}" class="social-info">
-                                            <span class="lnr" style="background-color:#EB5757;padding:10px;border-radius:50%;color:#fff">
+                    <a onclick="add_to_wishlist(this, {{ product.pk }})" class="social-info">
+                                            <span class="lnr" style="background-color:#EB5757;padding:10px;border-radius:50%">
 
                                                 {% if product|in_wishlist:request %}
-                                                   <i class="fas fa-heart"></i>
+                                                    <img src="{% static 'img/features/like.png' %}" style="width:20px;margin-top:-4px" alt="">
                                                 {% else %}
-                                                   <i class="far fa-heart"></i>
+                                                    <img src="{% static 'img/features/love.png' %}" style="width:20px;margin-top:-4px" alt="">
                                                 {% endif %}
                                             </span>
                         <p class="hover-text" style="padding:7px;color:#222; font-size:22px font-weight:600">

@@ -34,12 +34,12 @@ class AboutView(TemplateView):
 
 
 class LoginView(TemplateView):
-    template_name = 'login.html'
+    template_name = '/registration/login.html'
     extra_context = {'title': 'Login'}
 
 
 class RegisterView(TemplateView):
-    template_name = 'registration_form.html'
+    template_name = '/registration/registration_form.html'
     extra_context = {'title': 'Login'}
 
 

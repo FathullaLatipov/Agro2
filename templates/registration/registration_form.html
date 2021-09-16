@@ -1,19 +1,21 @@
 {% extends "registration/registration_base.html" %}
-{% load static %}
 {% load i18n %}
-{% load mytags %}
-{% load crispy_forms_tags %}
+{% load static %}
+
+{% block title %}{% trans "Register for an account" %}{% endblock %}
 
 {% block content %}
-	<!-- Start Banner Area -->
+<form method="POST" action="">
+    {% csrf_token %}
+    <!--    {{ form.as_p }}-->
 	<section class="banner-area organic-breadcrumb">
 		<div class="container">
 			<div class="breadcrumb-banner d-flex flex-wrap align-items-center justify-content-end">
 				<div class="col-first">
-					<h1 style="font-family:'Sparta', sans-serif">{% trans 'Registration Page' %}</h1>
+					<h1 style="font-family:'Sparta', sans-serif">Registration Page</h1>
 					<nav class="d-flex align-items-center">
-						<a href="/" style="font-family:'Sparta', sans-serif">{% trans 'Home' %}<span class="lnr lnr-arrow-right"></span></a>
-						<a href="" style="font-family:'Sparta', sans-serif">{% trans 'Registration Page' %}</a>
+						<a href="/" style="font-family:'Sparta', sans-serif">Home<span class="lnr lnr-arrow-right"></span></a>
+						<a href="" style="font-family:'Sparta', sans-serif">Registration Page</a>
 					</nav>
 				</div>
 			</div>
@@ -24,7 +26,7 @@
 	<!--================Login Box Area =================-->
 	<section class="login_box_area section_gap" style="padding:10px">
 		<div class="container">
-			<h1 class="text-center mb-0 p-2" style="font-family:'Sparta', sans-serif">{% trans 'Registration' %}</h1>
+			<h1 class="text-center mb-0 p-2" style="font-family:'Sparta', sans-serif">Registration</h1>
 			<div class="row">
 
 				<div class="col-lg-6">
@@ -39,9 +41,7 @@
 				</div>
 				<div class="col-lg-6">
 					<div class="login_form_inner">
-						<h3>{% trans 'Register'%}</h3>
-						<form class="row login_form" method="post" >
-							{% csrf_token %}
+						<h2>{% trans 'Register'%}</h2>
 							{% for field in form %}
 								{% for error in field.errors %}
 									<p class="error text-center" style="font-size:'Sparta', sans-serif">{{ error }}</p>
@@ -51,24 +51,29 @@
 								<p class="error text-center" style="font-size:'Sparta', sans-serif">{{ error }}</p>
 							{% endfor %}
 							<div class="col-md-12 form-group">
-								<input type="text" class="form-control" style="font-size:2rem" name="username" placeholder="Username" required value="{{ next }}">
+								<input name="username" type="text" class="form-control" style="font-size:2rem"   placeholder="Username" id="username">
 							</div>
 							<div class="col-md-12 form-group">
-								<input type="text" class="form-control" style="font-size:2rem" name="email" placeholder="E-mail" required>
+								<input  name="email" type="text" class="form-control" style="font-size:2rem" placeholder="E-mail" id="username">
 							</div>
 							<div class="col-md-12 form-group">
-								<input type="text" class="form-control" style="font-size:2rem" name="password1" placeholder="Password" required>
+								<input name="password1" type="password" class="form-control" style="font-size:2rem" placeholder="Password" id="password">
 							</div>
 							<div class="col-md-12 form-group">
-								<input type="text" class="form-control" style="font-size:2rem" name="password2" placeholder="Confirm password" required>
+								<input  name="password2" type="password" class="form-control" style="font-size:2rem" placeholder="Confirm password" id="password">
 							</div>
 							<div class="col-md-12 form-group">
-								 <a href="{% url 'auth_login' %}">
-									 <button type="submit" class="btn btn-info w-100">Sign In</button>
-                    			 </a>
-								<a href="{% url 'auth_login' %}">Login</a>
+								<div class="creat_account">
+									<input type="checkbox" id="f-option2" name="selector">
+									<label for="f-option2" style="font-weight:500">{% trans 'Keep me logged in' %}</label>
+								</div>
 							</div>
-						</form>
+							 <div class="send text-center">
+                                 <input type="submit" class="btn primary-btn" style="font-size:15px" value="{% trans 'Submit' %}"/>
+                            </div>
+                        <a href="/" style="color:#000">Back to web site</a>
+                        <br>
+                        <a href="{% url 'auth_login' %}" style="color:#000">Back to login</a>
 						{% for message in messages %}
 								<p id="messages text-center" style="font-size:'Sparta', sans-serif">{{message}}</p>
 						{% endfor %}
@@ -77,13 +82,18 @@
 			</div>
 		</div>
 	</section>
-	<!--================End Login Box Area =================-->
+</form>
 {% endblock %}
 
-{% block extra_js %}
-	<script>
-		{% for i in messages %}
-			console.log('{{ i }}')
-		{% endfor %}
-	</script>
-{% endblock %}
+
+{% comment %}
+**registration/registration_form.html**
+Used to show the form users will fill out to register. By default, has
+the following context:
+
+``form``
+The registration form. This will be an instance of some subclass
+of ``django.forms.Form``; consult `Django's forms documentation
+<http://docs.djangoproject.com/en/dev/topics/forms/>`_ for
+information on how to display this in a template.
+{% endcomment %}
