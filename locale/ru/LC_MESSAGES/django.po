@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-16 19:04+0500\n"
+"POT-Creation-Date: 2021-09-16 20:25+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -182,8 +182,10 @@ msgstr "Корзина"
 #: .\templates\checkout.html:12 .\templates\checkout2.html:13
 #: .\templates\contact.html:12 .\templates\history.html:12
 #: .\templates\layouts\footer.html:353 .\templates\layouts\header.html:63
-#: .\templates\shop.html:16 .\templates\shopping-cart.html:13
-#: .\templates\single-product.html:13 .\templates\wishlist.html:12
+#: .\templates\registration\login.html:18
+#: .\templates\registration\registration_form.html:17 .\templates\shop.html:16
+#: .\templates\shopping-cart.html:13 .\templates\single-product.html:13
+#: .\templates\wishlist.html:12
 msgid "Home"
 msgstr "Главная"
 
@@ -277,35 +279,35 @@ msgstr "Мы"
 msgid "Our Contacts"
 msgstr "контакт"
 
-#: .\templates\index.html:178
+#: .\templates\index.html:176
 msgid "Удобная локация"
 msgstr "Удобная локация"
 
-#: .\templates\index.html:189
+#: .\templates\index.html:187
 msgid "Быстрая доставка"
 msgstr "Быстрая доставка"
 
-#: .\templates\index.html:198
+#: .\templates\index.html:196
 msgid "Колл центр"
 msgstr "Колл центр"
 
-#: .\templates\index.html:207
+#: .\templates\index.html:205
 msgid "Политика возврата"
 msgstr "Политика возврата"
 
-#: .\templates\index.html:286
+#: .\templates\index.html:284
 msgid "Latest Products"
 msgstr "Продукты"
 
-#: .\templates\index.html:349
+#: .\templates\index.html:347
 msgid "Hours"
 msgstr "Часы"
 
-#: .\templates\index.html:375
+#: .\templates\index.html:373
 msgid "Minutes"
 msgstr "Минуты"
 
-#: .\templates\index.html:401
+#: .\templates\index.html:399
 msgid "Seconds"
 msgstr "Секунды"
 
@@ -540,29 +542,41 @@ msgstr ""
 msgid "Account approval on"
 msgstr ""
 
-#: .\templates\registration\login.html:4 .\templates\registration\login.html:11
+#: .\templates\registration\login.html:5
 #, fuzzy
 #| msgid "Log In"
 msgid "Log in"
 msgstr "Войти"
 
-#: .\templates\registration\login.html:15
+#: .\templates\registration\login.html:16
+#: .\templates\registration\login.html:19
+#: .\templates\registration\login.html:45
+msgid "Login"
+msgstr "Логин"
+
+#: .\templates\registration\login.html:36
+msgid "New to our website?"
+msgstr "Впервые на нашем сайте?"
+
+#: .\templates\registration\login.html:37
+msgid "Create an Account"
+msgstr "Создать Аккаунт"
+
+#: .\templates\registration\login.html:64
+#: .\templates\registration\registration_form.html:65
+msgid "Keep me logged in"
+msgstr "Оставаться в системе"
+
+#: .\templates\registration\login.html:69
 #, fuzzy
-#| msgid "Forgot Password?"
-msgid "Forgot your password?"
-msgstr "Забыли Пароль?"
+#| msgid "Log In"
+msgid "Log In"
+msgstr "Войти"
 
-#: .\templates\registration\login.html:15
-msgid "Reset it"
-msgstr ""
-
-#: .\templates\registration\login.html:16
-msgid "Not a member?"
-msgstr ""
-
-#: .\templates\registration\login.html:16
-msgid "Register"
-msgstr ""
+#: .\templates\registration\login.html:71
+#: .\templates\registration\registration_form.html:71
+msgid "Back to web site"
+msgstr "Назад на главаную страницу"
 
 #: .\templates\registration\logout.html:4
 msgid "Logged out"
@@ -687,18 +701,33 @@ msgstr "Аккаунт активирован повторно"
 msgid "Please check your email to complete the registration process."
 msgstr ""
 
-#: .\templates\registration\registration_form.html:4
+#: .\templates\registration\registration_form.html:5
 msgid "Register for an account"
 msgstr ""
 
-#: .\templates\registration\registration_form.html:12
+#: .\templates\registration\registration_form.html:15
+#: .\templates\registration\registration_form.html:18
 msgid "Registration Page"
 msgstr "Регистрация"
 
-#: .\templates\registration\registration_form.html:26
+#: .\templates\registration\registration_form.html:29
+msgid "Registration"
+msgstr "Регистрация"
+
+#: .\templates\registration\registration_form.html:41
+msgid "Register"
+msgstr "Регистрация"
+
+#: .\templates\registration\registration_form.html:69
 #: .\templates\registration\resend_activation_form.html:10
 msgid "Submit"
 msgstr "Подтвердить"
+
+#: .\templates\registration\registration_form.html:73
+#, fuzzy
+#| msgid "Back to web site"
+msgid "Back to login"
+msgstr "Назад на главаную страницу"
 
 #: .\templates\registration\resend_activation_complete.html:4
 msgid "Account Activation Resent"
@@ -764,6 +793,11 @@ msgstr "Рекомендовааные товары"
 msgid "Wishlist"
 msgstr "Избранные"
 
+#, fuzzy
+#~| msgid "Forgot Password?"
+#~ msgid "Forgot your password?"
+#~ msgstr "Забыли Пароль?"
+
 #~ msgid "Category"
 #~ msgstr "Категория"
 
@@ -779,17 +813,8 @@ msgstr "Избранные"
 #~ msgid "Dried fruits"
 #~ msgstr "Сухофрукты"
 
-#~ msgid "Login"
-#~ msgstr "Логин"
-
 #~ msgid "Sign In"
 #~ msgstr "Войти"
-
-#~ msgid "Back to web site"
-#~ msgstr "Назад на главаную страницу"
-
-#~ msgid "Registration"
-#~ msgstr "Регистрация"
 
 #~ msgid "brand"
 #~ msgstr "бренд"

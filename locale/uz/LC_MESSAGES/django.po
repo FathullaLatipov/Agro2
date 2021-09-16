@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-16 19:04+0500\n"
+"POT-Creation-Date: 2021-09-16 20:25+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -180,8 +180,10 @@ msgstr "Tekshirib ko'rmoq"
 #: .\templates\checkout.html:12 .\templates\checkout2.html:13
 #: .\templates\contact.html:12 .\templates\history.html:12
 #: .\templates\layouts\footer.html:353 .\templates\layouts\header.html:63
-#: .\templates\shop.html:16 .\templates\shopping-cart.html:13
-#: .\templates\single-product.html:13 .\templates\wishlist.html:12
+#: .\templates\registration\login.html:18
+#: .\templates\registration\registration_form.html:17 .\templates\shop.html:16
+#: .\templates\shopping-cart.html:13 .\templates\single-product.html:13
+#: .\templates\wishlist.html:12
 msgid "Home"
 msgstr "Bosh sahifa"
 
@@ -275,35 +277,35 @@ msgstr "Biz"
 msgid "Our Contacts"
 msgstr "Barcha Contactlar"
 
-#: .\templates\index.html:178
+#: .\templates\index.html:176
 msgid "Удобная локация"
 msgstr "Qulay joylashuv"
 
-#: .\templates\index.html:189
+#: .\templates\index.html:187
 msgid "Быстрая доставка"
 msgstr "Tez etkazib berish"
 
-#: .\templates\index.html:198
+#: .\templates\index.html:196
 msgid "Колл центр"
 msgstr "Qo'ng'iroqlar markazi"
 
-#: .\templates\index.html:207
+#: .\templates\index.html:205
 msgid "Политика возврата"
 msgstr "Qaytarish siyosati"
 
-#: .\templates\index.html:286
+#: .\templates\index.html:284
 msgid "Latest Products"
 msgstr "Mahsulotramiz"
 
-#: .\templates\index.html:349
+#: .\templates\index.html:347
 msgid "Hours"
 msgstr "Soat"
 
-#: .\templates\index.html:375
+#: .\templates\index.html:373
 msgid "Minutes"
 msgstr "Daqiqa"
 
-#: .\templates\index.html:401
+#: .\templates\index.html:399
 msgid "Seconds"
 msgstr "Soniya"
 
@@ -538,29 +540,41 @@ msgstr ""
 msgid "Account approval on"
 msgstr ""
 
-#: .\templates\registration\login.html:4 .\templates\registration\login.html:11
+#: .\templates\registration\login.html:5
 #, fuzzy
 #| msgid "Log In"
 msgid "Log in"
 msgstr "Kirish"
 
-#: .\templates\registration\login.html:15
+#: .\templates\registration\login.html:16
+#: .\templates\registration\login.html:19
+#: .\templates\registration\login.html:45
+msgid "Login"
+msgstr "Kirish"
+
+#: .\templates\registration\login.html:36
+msgid "New to our website?"
+msgstr "Bizning saytga yangimisiz?"
+
+#: .\templates\registration\login.html:37
+msgid "Create an Account"
+msgstr "Akkaunt ochish"
+
+#: .\templates\registration\login.html:64
+#: .\templates\registration\registration_form.html:65
+msgid "Keep me logged in"
+msgstr "tizimdan chiqmaslik"
+
+#: .\templates\registration\login.html:69
 #, fuzzy
-#| msgid "Forgot Password?"
-msgid "Forgot your password?"
-msgstr "Parolni unutdingizmi?"
+#| msgid "Log In"
+msgid "Log In"
+msgstr "Kirish"
 
-#: .\templates\registration\login.html:15
-msgid "Reset it"
-msgstr ""
-
-#: .\templates\registration\login.html:16
-msgid "Not a member?"
-msgstr ""
-
-#: .\templates\registration\login.html:16
-msgid "Register"
-msgstr "Royxatdan otish"
+#: .\templates\registration\login.html:71
+#: .\templates\registration\registration_form.html:71
+msgid "Back to web site"
+msgstr "Web saytga qaytish"
 
 #: .\templates\registration\logout.html:4
 msgid "Logged out"
@@ -683,18 +697,33 @@ msgstr ""
 msgid "Please check your email to complete the registration process."
 msgstr ""
 
-#: .\templates\registration\registration_form.html:4
+#: .\templates\registration\registration_form.html:5
 msgid "Register for an account"
 msgstr ""
 
-#: .\templates\registration\registration_form.html:12
+#: .\templates\registration\registration_form.html:15
+#: .\templates\registration\registration_form.html:18
 msgid "Registration Page"
 msgstr "Royxatdan otish"
 
-#: .\templates\registration\registration_form.html:26
+#: .\templates\registration\registration_form.html:29
+msgid "Registration"
+msgstr "Royxatdan otish"
+
+#: .\templates\registration\registration_form.html:41
+msgid "Register"
+msgstr "Royxatdan otish"
+
+#: .\templates\registration\registration_form.html:69
 #: .\templates\registration\resend_activation_form.html:10
 msgid "Submit"
 msgstr "Jonatish"
+
+#: .\templates\registration\registration_form.html:73
+#, fuzzy
+#| msgid "Back to web site"
+msgid "Back to login"
+msgstr "Web saytga qaytish"
 
 #: .\templates\registration\resend_activation_complete.html:4
 msgid "Account Activation Resent"
@@ -760,6 +789,11 @@ msgstr "Tavsiya etilgan mahsulotlar"
 msgid "Wishlist"
 msgstr "Tanlanganlar"
 
+#, fuzzy
+#~| msgid "Forgot Password?"
+#~ msgid "Forgot your password?"
+#~ msgstr "Parolni unutdingizmi?"
+
 #~ msgid "Category"
 #~ msgstr "Bolimlar"
 
@@ -775,23 +809,11 @@ msgstr "Tanlanganlar"
 #~ msgid "Dried fruits"
 #~ msgstr "Quruq mahsulotlar"
 
-#~ msgid "Login"
-#~ msgstr "Kirish"
-
-#~ msgid "Keep me logged in"
-#~ msgstr "tizimdan chiqmaslik"
-
 #~ msgid "Ссылка на подтверждения отправлено на ваш email"
 #~ msgstr "Tasdiqlash havolasi sizning elektron pochtangizga yuborildi"
 
 #~ msgid "Sign In"
 #~ msgstr "Kirish"
-
-#~ msgid "Back to web site"
-#~ msgstr "Web saytga qaytish"
-
-#~ msgid "Registration"
-#~ msgstr "Royxatdan otish"
 
 #~ msgid "Free Delivery"
 #~ msgstr "Bepul etkazib berish"
