@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-16 20:25+0500\n"
+"POT-Creation-Date: 2021-09-17 22:16+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,15 +18,15 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: .\agro\settings.py:111
+#: .\agro\settings.py:112
 msgid "English"
 msgstr ""
 
-#: .\agro\settings.py:112
+#: .\agro\settings.py:113
 msgid "Russian"
 msgstr ""
 
-#: .\agro\settings.py:113
+#: .\agro\settings.py:114
 msgid "Uzbek"
 msgstr ""
 
@@ -181,6 +181,7 @@ msgstr ""
 #: .\templates\contact.html:12 .\templates\history.html:12
 #: .\templates\layouts\footer.html:353 .\templates\layouts\header.html:63
 #: .\templates\registration\login.html:18
+#: .\templates\registration\registration_complete.html:18
 #: .\templates\registration\registration_form.html:17 .\templates\shop.html:16
 #: .\templates\shopping-cart.html:13 .\templates\single-product.html:13
 #: .\templates\wishlist.html:12
@@ -236,16 +237,18 @@ msgstr ""
 msgid "Created_at"
 msgstr ""
 
-#: .\templates\index.html:124
-msgid "Creative Template"
+#: .\templates\index.html:124 .\templates\index.html:132
+#: .\templates\index.html:140 .\templates\index.html:148
+msgid "Export"
 msgstr ""
 
-#: .\templates\index.html:125 .\templates\index.html:149
-msgid "Welcome"
+#: .\templates\index.html:125 .\templates\index.html:133
+#: .\templates\index.html:141 .\templates\index.html:149
+msgid "And"
 msgstr ""
 
-#: .\templates\index.html:125 .\templates\index.html:149
-msgid "to Agro Organic Food"
+#: .\templates\index.html:125
+msgid "Import of dried fruits"
 msgstr ""
 
 #: .\templates\index.html:127 .\templates\index.html:135
@@ -253,28 +256,16 @@ msgstr ""
 msgid "Learn More"
 msgstr ""
 
-#: .\templates\index.html:132
-msgid "What We Do"
-msgstr ""
-
 #: .\templates\index.html:133
-msgid "Great"
-msgstr ""
-
-#: .\templates\index.html:133 .\templates\index.html:141
-msgid "Agro Organic Food"
-msgstr ""
-
-#: .\templates\index.html:140
-msgid "Here We Are"
+msgid "Fruit import"
 msgstr ""
 
 #: .\templates\index.html:141
-msgid "We Are"
+msgid "Import of vegetables"
 msgstr ""
 
-#: .\templates\index.html:148
-msgid "Our Contacts"
+#: .\templates\index.html:149
+msgid "Import parsley"
 msgstr ""
 
 #: .\templates\index.html:176
@@ -292,6 +283,26 @@ msgstr "Сoll center"
 #: .\templates\index.html:205
 msgid "Политика возврата"
 msgstr "Return policy"
+
+#: .\templates\index.html:216
+msgid "Category"
+msgstr ""
+
+#: .\templates\index.html:227
+msgid "Fruits"
+msgstr ""
+
+#: .\templates\index.html:240
+msgid "Vegetables"
+msgstr ""
+
+#: .\templates\index.html:252
+msgid "Parsley"
+msgstr ""
+
+#: .\templates\index.html:263
+msgid "Dried fruits"
+msgstr ""
 
 #: .\templates\index.html:284
 msgid "Latest Products"
@@ -312,6 +323,14 @@ msgstr ""
 #: .\templates\layouts\footer.html:296
 msgid "About Agro Organic cop."
 msgstr ""
+
+#: .\templates\layouts\footer.html:297
+msgid ""
+"AGRO ORGANIC FOOD – является экспортёром и импортёром фруктов, овощей и "
+"сухофруктов и заинтересована в поддержании своей репутации."
+msgstr ""
+"AGRO ORGANIC FOOD is an exporter and importer of fruits, vegetables and "
+"dried fruit and is interested in maintaining its reputation."
 
 #: .\templates\layouts\footer.html:302
 msgid "Location Store"
@@ -363,6 +382,14 @@ msgstr ""
 
 #: .\templates\layouts\header2.html:623
 msgid "CONTACT"
+msgstr ""
+
+#: .\templates\layouts\product_block.html:218
+msgid "Added to wishlist"
+msgstr ""
+
+#: .\templates\layouts\product_block.html:226
+msgid "Removed from wishlist"
 msgstr ""
 
 #: .\templates\products_filter.html:12
@@ -541,34 +568,43 @@ msgid "Account approval on"
 msgstr ""
 
 #: .\templates\registration\login.html:5
+#: .\templates\registration\registration_complete.html:5
 msgid "Log in"
 msgstr ""
 
 #: .\templates\registration\login.html:16
 #: .\templates\registration\login.html:19
 #: .\templates\registration\login.html:45
+#: .\templates\registration\registration_complete.html:16
+#: .\templates\registration\registration_complete.html:19
+#: .\templates\registration\registration_complete.html:45
 msgid "Login"
 msgstr ""
 
 #: .\templates\registration\login.html:36
+#: .\templates\registration\registration_complete.html:36
 msgid "New to our website?"
 msgstr ""
 
 #: .\templates\registration\login.html:37
+#: .\templates\registration\registration_complete.html:37
 msgid "Create an Account"
 msgstr ""
 
 #: .\templates\registration\login.html:64
+#: .\templates\registration\registration_complete.html:64
 #: .\templates\registration\registration_form.html:65
 msgid "Keep me logged in"
 msgstr ""
 
 #: .\templates\registration\login.html:69
+#: .\templates\registration\registration_complete.html:69
 msgid "Log In"
 msgstr ""
 
 #: .\templates\registration\login.html:71
-#: .\templates\registration\registration_form.html:71
+#: .\templates\registration\registration_complete.html:71
+#: .\templates\registration\registration_form.html:73
 msgid "Back to web site"
 msgstr ""
 
@@ -685,14 +721,6 @@ msgstr ""
 msgid "Sorry, but registration is closed at this moment. Come back later."
 msgstr ""
 
-#: .\templates\registration\registration_complete.html:4
-msgid "Activation email sent"
-msgstr ""
-
-#: .\templates\registration\registration_complete.html:7
-msgid "Please check your email to complete the registration process."
-msgstr ""
-
 #: .\templates\registration\registration_form.html:5
 msgid "Register for an account"
 msgstr ""
@@ -710,12 +738,12 @@ msgstr ""
 msgid "Register"
 msgstr ""
 
-#: .\templates\registration\registration_form.html:69
+#: .\templates\registration\registration_form.html:70
 #: .\templates\registration\resend_activation_form.html:10
 msgid "Submit"
 msgstr ""
 
-#: .\templates\registration\registration_form.html:73
+#: .\templates\registration\registration_form.html:75
 msgid "Back to login"
 msgstr ""
 
@@ -755,6 +783,14 @@ msgstr ""
 msgid "High"
 msgstr ""
 
+#: .\templates\shop.html:170
+msgid "Added"
+msgstr ""
+
+#: .\templates\shop.html:178
+msgid "Removed"
+msgstr ""
+
 #: .\templates\shopping-cart.html:11 .\templates\shopping-cart.html:14
 msgid "Shopping-cart"
 msgstr ""
@@ -771,8 +807,40 @@ msgstr ""
 msgid "Sku:"
 msgstr ""
 
-#: .\templates\single-product.html:148
+#: .\templates\single-product.html:61
+msgid "remove-cart"
+msgstr ""
+
+#: .\templates\single-product.html:63
+msgid "add-cart"
+msgstr ""
+
+#: .\templates\single-product.html:86
+msgid "Description"
+msgstr ""
+
+#: .\templates\single-product.html:90
+msgid "Comments"
+msgstr ""
+
+#: .\templates\single-product.html:148 .\templates\single-product.html:200
 msgid "Submit Now"
+msgstr ""
+
+#: .\templates\single-product.html:181
+msgid "Your Full name"
+msgstr ""
+
+#: .\templates\single-product.html:186
+msgid "Email Address"
+msgstr ""
+
+#: .\templates\single-product.html:191
+msgid "Phone Number"
+msgstr ""
+
+#: .\templates\single-product.html:196
+msgid "Review"
 msgstr ""
 
 #: .\templates\single-product.html:218

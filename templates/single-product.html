@@ -58,12 +58,12 @@
 						<div class="card_area d-flex align-items-center">
 							<a class="primary-btn" onclick="add_to_cart(this, {{ object.pk }})">
 							{% if object|in_cart:request %}
-								<span style="color:#fff">remove-cart</span>
+								<span style="color:#fff">{% trans 'remove-cart' %}</span>
 							   {% else %}
-								<span style="color:#fff">add-cart</span>
+								<span style="color:#fff">{% trans 'add-cart' %}</span>
 							{% endif %}
 							</a>
-							<a class="icon_btn" href="{% url 'products:add-wishlist' pk=object.pk %}?next={{ request.path }}?{{request.GET.urlendcode }}">
+							<a class="icon_btn" onclick="add_to_wishlist(this, {{ object.pk }})">
 								{% if request.user in object.wishlist.all %}
 									<i class="lnr"><img src="{% static '/img/features/like.png' %}" style="width:20px" alt=""></i>
 								{% else %}
@@ -83,17 +83,17 @@
 		<div class="container">
 			<ul class="nav nav-tabs" id="myTab" role="tablist">
 				<li class="nav-item">
-					<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Description</a>
+					<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">{% trans 'Description' %}</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact"
-					 aria-selected="false">Comments</a>
+					 aria-selected="false">{% trans 'Comments' %}</a>
 				</li>
 
 			</ul>
 			<div class="tab-content" id="myTabContent">
 				<div class="tab-pane  fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-					<div class="container m-auto">
+					<div class="container">
 						<p style="">{{ object.long_description|safe }}<br><br></p>
 					</div>
 
@@ -178,26 +178,26 @@
 								<form class="row contact_form"  method="post" id="contactForm" novalidate="novalidate">
 									<div class="col-md-12">
 										<div class="form-group">
-											<input type="text" class="form-control" id="name" name="name" placeholder="Your Full name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Full name'">
+											<input type="text" class="form-control" id="name" name="name" placeholder="{% trans 'Your Full name' %}" onfocus="this.placeholder = ''" onblur="this.placeholder = {% trans 'Your Full name' %}">
 										</div>
 									</div>
 									<div class="col-md-12">
 										<div class="form-group">
-											<input type="email" class="form-control" id="email" name="email" placeholder="Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address'">
+											<input type="email" class="form-control" id="email" name="email" placeholder="{% trans 'Email Address' %}" onfocus="this.placeholder = ''" onblur="this.placeholder = {% trans 'Email Address' %}">
 										</div>
 									</div>
 									<div class="col-md-12">
 										<div class="form-group">
-											<input type="text" class="form-control" id="number" name="number" placeholder="Phone Number" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Phone Number'">
+											<input type="text" class="form-control" id="number" name="number" placeholder="{% trans 'Phone Number' %}" onfocus="this.placeholder = ''" onblur="this.placeholder = {% trans 'Phone Number' %}">
 										</div>
 									</div>
 									<div class="col-md-12">
 										<div class="form-group">
-											<textarea class="form-control" name="message" id="message" rows="1" placeholder="Review" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Review'"></textarea></textarea>
+											<textarea class="form-control" name="message" id="message" rows="1" placeholder="{% trans 'Review' %}" onfocus="this.placeholder = ''" onblur="this.placeholder = {% trans 'Review' %}"></textarea></textarea>
 										</div>
 									</div>
 									<div class="col-md-12 text-right">
-										<button type="submit" value="submit" class="primary-btn">Submit Now</button>
+										<button type="submit" value="submit" class="primary-btn">{% trans 'Submit Now' %}</button>
 									</div>
 								</form>
 							</div>
@@ -221,7 +221,7 @@
 			</div>
 <!--			sasas-->
 			 <section class="lattest-product-area pb-40 category-list">
-                <div class="row">
+                <div class="row pros">
                     {% for product in object.category.products.all|slice:'4' %}
                     <div class="col-lg-3 col-md-6">
                          {% include 'layouts/product_block.html' %}
@@ -229,6 +229,18 @@
                     {% endfor %}
                 </div>
             </section>
+			<div class="swiper_start prods">
+           <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                     {% for product in object.category.products.all %}
+                        {% include 'layouts/product_block2.html' %}
+                     {% endfor %}
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
 		</div>
 	</section>
 	<!-- End related-product Area -->

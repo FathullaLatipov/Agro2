@@ -4714,9 +4714,6 @@ button:hover {
       margin-right: 7px; }
       .product_description_area .nav.nav-tabs li:last-child {
         margin-right: 0px; }
-        @media (max-width: 441px) {
-          .product_description_area .nav.nav-tabs li:last-child {
-            margin-top: 15px; } }
       .product_description_area .nav.nav-tabs li a {
         padding: 0px;
         border: none;

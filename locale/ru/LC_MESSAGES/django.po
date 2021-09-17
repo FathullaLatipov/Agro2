@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-16 20:25+0500\n"
+"POT-Creation-Date: 2021-09-17 22:16+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,15 +20,15 @@ msgstr ""
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
 "%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: .\agro\settings.py:111
+#: .\agro\settings.py:112
 msgid "English"
 msgstr ""
 
-#: .\agro\settings.py:112
+#: .\agro\settings.py:113
 msgid "Russian"
 msgstr ""
 
-#: .\agro\settings.py:113
+#: .\agro\settings.py:114
 msgid "Uzbek"
 msgstr ""
 
@@ -183,6 +183,7 @@ msgstr "Корзина"
 #: .\templates\contact.html:12 .\templates\history.html:12
 #: .\templates\layouts\footer.html:353 .\templates\layouts\header.html:63
 #: .\templates\registration\login.html:18
+#: .\templates\registration\registration_complete.html:18
 #: .\templates\registration\registration_form.html:17 .\templates\shop.html:16
 #: .\templates\shopping-cart.html:13 .\templates\single-product.html:13
 #: .\templates\wishlist.html:12
@@ -238,46 +239,36 @@ msgstr "Цена"
 msgid "Created_at"
 msgstr "Время Покупки"
 
-#: .\templates\index.html:124
-msgid "Creative Template"
-msgstr "Творческий шаблон"
+#: .\templates\index.html:124 .\templates\index.html:132
+#: .\templates\index.html:140 .\templates\index.html:148
+msgid "Export"
+msgstr "Экспрот"
 
-#: .\templates\index.html:125 .\templates\index.html:149
-msgid "Welcome"
-msgstr "Добро пожаловать"
+#: .\templates\index.html:125 .\templates\index.html:133
+#: .\templates\index.html:141 .\templates\index.html:149
+msgid "And"
+msgstr "И"
 
-#: .\templates\index.html:125 .\templates\index.html:149
-msgid "to Agro Organic Food"
-msgstr "About Agro Organic"
+#: .\templates\index.html:125
+msgid "Import of dried fruits"
+msgstr "Импорт Сухофруктов"
 
 #: .\templates\index.html:127 .\templates\index.html:135
 #: .\templates\index.html:143 .\templates\index.html:151
 msgid "Learn More"
 msgstr "Читать еще"
 
-#: .\templates\index.html:132
-msgid "What We Do"
-msgstr "Что мы делаем"
-
 #: .\templates\index.html:133
-msgid "Great"
-msgstr "Большой"
-
-#: .\templates\index.html:133 .\templates\index.html:141
-msgid "Agro Organic Food"
-msgstr "About Agro Organic"
-
-#: .\templates\index.html:140
-msgid "Here We Are"
-msgstr "Мы здесь"
+msgid "Fruit import"
+msgstr "Импорт фруктов"
 
 #: .\templates\index.html:141
-msgid "We Are"
-msgstr "Мы"
+msgid "Import of vegetables"
+msgstr "Импорт овощей"
 
-#: .\templates\index.html:148
-msgid "Our Contacts"
-msgstr "контакт"
+#: .\templates\index.html:149
+msgid "Import parsley"
+msgstr "Импорт зеленей"
 
 #: .\templates\index.html:176
 msgid "Удобная локация"
@@ -294,6 +285,26 @@ msgstr "Колл центр"
 #: .\templates\index.html:205
 msgid "Политика возврата"
 msgstr "Политика возврата"
+
+#: .\templates\index.html:216
+msgid "Category"
+msgstr "Категория"
+
+#: .\templates\index.html:227
+msgid "Fruits"
+msgstr "Фрукты"
+
+#: .\templates\index.html:240
+msgid "Vegetables"
+msgstr "Овощи"
+
+#: .\templates\index.html:252
+msgid "Parsley"
+msgstr "Зелени"
+
+#: .\templates\index.html:263
+msgid "Dried fruits"
+msgstr "Сухофрукты"
 
 #: .\templates\index.html:284
 msgid "Latest Products"
@@ -314,6 +325,12 @@ msgstr "Секунды"
 #: .\templates\layouts\footer.html:296
 msgid "About Agro Organic cop."
 msgstr "About Agro Organic ком."
+
+#: .\templates\layouts\footer.html:297
+msgid ""
+"AGRO ORGANIC FOOD – является экспортёром и импортёром фруктов, овощей и "
+"сухофруктов и заинтересована в поддержании своей репутации."
+msgstr ""
 
 #: .\templates\layouts\footer.html:302
 msgid "Location Store"
@@ -366,6 +383,14 @@ msgstr "ПРОДУКТЫ"
 #: .\templates\layouts\header2.html:623
 msgid "CONTACT"
 msgstr "КОНТАКТЫ"
+
+#: .\templates\layouts\product_block.html:218
+msgid "Added to wishlist"
+msgstr "Добавлено в избранные"
+
+#: .\templates\layouts\product_block.html:226
+msgid "Removed from wishlist"
+msgstr "Удалено из избранных"
 
 #: .\templates\products_filter.html:12
 msgid "Clear filter"
@@ -543,6 +568,7 @@ msgid "Account approval on"
 msgstr ""
 
 #: .\templates\registration\login.html:5
+#: .\templates\registration\registration_complete.html:5
 #, fuzzy
 #| msgid "Log In"
 msgid "Log in"
@@ -551,30 +577,38 @@ msgstr "Войти"
 #: .\templates\registration\login.html:16
 #: .\templates\registration\login.html:19
 #: .\templates\registration\login.html:45
+#: .\templates\registration\registration_complete.html:16
+#: .\templates\registration\registration_complete.html:19
+#: .\templates\registration\registration_complete.html:45
 msgid "Login"
 msgstr "Логин"
 
 #: .\templates\registration\login.html:36
+#: .\templates\registration\registration_complete.html:36
 msgid "New to our website?"
 msgstr "Впервые на нашем сайте?"
 
 #: .\templates\registration\login.html:37
+#: .\templates\registration\registration_complete.html:37
 msgid "Create an Account"
 msgstr "Создать Аккаунт"
 
 #: .\templates\registration\login.html:64
+#: .\templates\registration\registration_complete.html:64
 #: .\templates\registration\registration_form.html:65
 msgid "Keep me logged in"
 msgstr "Оставаться в системе"
 
 #: .\templates\registration\login.html:69
+#: .\templates\registration\registration_complete.html:69
 #, fuzzy
 #| msgid "Log In"
 msgid "Log In"
 msgstr "Войти"
 
 #: .\templates\registration\login.html:71
-#: .\templates\registration\registration_form.html:71
+#: .\templates\registration\registration_complete.html:71
+#: .\templates\registration\registration_form.html:73
 msgid "Back to web site"
 msgstr "Назад на главаную страницу"
 
@@ -691,16 +725,6 @@ msgstr ""
 msgid "Sorry, but registration is closed at this moment. Come back later."
 msgstr ""
 
-#: .\templates\registration\registration_complete.html:4
-#, fuzzy
-#| msgid "Account Activation Resent"
-msgid "Activation email sent"
-msgstr "Аккаунт активирован повторно"
-
-#: .\templates\registration\registration_complete.html:7
-msgid "Please check your email to complete the registration process."
-msgstr ""
-
 #: .\templates\registration\registration_form.html:5
 msgid "Register for an account"
 msgstr ""
@@ -718,12 +742,12 @@ msgstr "Регистрация"
 msgid "Register"
 msgstr "Регистрация"
 
-#: .\templates\registration\registration_form.html:69
+#: .\templates\registration\registration_form.html:70
 #: .\templates\registration\resend_activation_form.html:10
 msgid "Submit"
 msgstr "Подтвердить"
 
-#: .\templates\registration\registration_form.html:73
+#: .\templates\registration\registration_form.html:75
 #, fuzzy
 #| msgid "Back to web site"
 msgid "Back to login"
@@ -765,6 +789,14 @@ msgstr "Низкий"
 msgid "High"
 msgstr "Высокий"
 
+#: .\templates\shop.html:170
+msgid "Added"
+msgstr ""
+
+#: .\templates\shop.html:178
+msgid "Removed"
+msgstr ""
+
 #: .\templates\shopping-cart.html:11 .\templates\shopping-cart.html:14
 msgid "Shopping-cart"
 msgstr "Корзина покупателя"
@@ -781,9 +813,47 @@ msgstr "Катрегория"
 msgid "Sku:"
 msgstr "ID"
 
-#: .\templates\single-product.html:148
+#: .\templates\single-product.html:61
+msgid "remove-cart"
+msgstr "удалено из корзинки"
+
+#: .\templates\single-product.html:63
+msgid "add-cart"
+msgstr "добавлено в корзинку"
+
+#: .\templates\single-product.html:86
+#, fuzzy
+#| msgid "long_description"
+msgid "Description"
+msgstr "длинное описания"
+
+#: .\templates\single-product.html:90
+#, fuzzy
+#| msgid "comments"
+msgid "Comments"
+msgstr "комменты"
+
+#: .\templates\single-product.html:148 .\templates\single-product.html:200
 msgid "Submit Now"
 msgstr "Отправить сейчас"
+
+#: .\templates\single-product.html:181
+msgid "Your Full name"
+msgstr "Ваша имя"
+
+#: .\templates\single-product.html:186
+#, fuzzy
+#| msgid "Enter email address"
+msgid "Email Address"
+msgstr "Ваш email"
+
+#: .\templates\single-product.html:191
+msgid "Phone Number"
+msgstr "Ваш номер"
+
+#: .\templates\single-product.html:196
+msgid "Review"
+msgstr "Коментарии"
 
 #: .\templates\single-product.html:218
 msgid "Deals of the Week"
@@ -793,25 +863,42 @@ msgstr "Рекомендовааные товары"
 msgid "Wishlist"
 msgstr "Избранные"
 
+#~ msgid "Creative Template"
+#~ msgstr "Творческий шаблон"
+
+#~ msgid "Welcome"
+#~ msgstr "Добро пожаловать"
+
+#~ msgid "to Agro Organic Food"
+#~ msgstr "About Agro Organic"
+
+#~ msgid "What We Do"
+#~ msgstr "Что мы делаем"
+
+#~ msgid "Great"
+#~ msgstr "Большой"
+
+#~ msgid "Agro Organic Food"
+#~ msgstr "About Agro Organic"
+
+#~ msgid "Here We Are"
+#~ msgstr "Мы здесь"
+
+#~ msgid "We Are"
+#~ msgstr "Мы"
+
+#~ msgid "Our Contacts"
+#~ msgstr "контакт"
+
+#, fuzzy
+#~| msgid "Account Activation Resent"
+#~ msgid "Activation email sent"
+#~ msgstr "Аккаунт активирован повторно"
+
 #, fuzzy
 #~| msgid "Forgot Password?"
 #~ msgid "Forgot your password?"
 #~ msgstr "Забыли Пароль?"
-
-#~ msgid "Category"
-#~ msgstr "Категория"
-
-#~ msgid "Fruits"
-#~ msgstr "Фрукты"
-
-#~ msgid "Vegetables"
-#~ msgstr "Овощи"
-
-#~ msgid "Parsley"
-#~ msgstr "Зелени"
-
-#~ msgid "Dried fruits"
-#~ msgstr "Сухофрукты"
 
 #~ msgid "Sign In"
 #~ msgstr "Войти"

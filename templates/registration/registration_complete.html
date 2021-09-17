@@ -1,18 +1,111 @@
 {% extends "registration/registration_base.html" %}
 {% load i18n %}
+{% load static %}
 
-{% block title %}{% trans "Activation email sent" %}{% endblock %}
+{% block title %}{% trans "Log in" %}{% endblock %}
 
 {% block content %}
-<p>{% trans "Please check your email to complete the registration process." %}</p>
+<form method="post" action="">
+    {% csrf_token %}
+    <input type="hidden" name="next" value="{{ next }}"/>
+<!--    {{ form.as_p }}-->
+   <section class="banner-area organic-breadcrumb">
+		<div class="container">
+			<div class="breadcrumb-banner d-flex flex-wrap align-items-center justify-content-end">
+				<div class="col-first">
+					<h1 style="font-family:'Spartan', sans-serif;color:#fff">{% trans 'Login' %}</h1>
+					<nav class="d-flex align-items-center">
+						<a href="/" style="font-family:'Spartan', sans-serif">{% trans 'Home' %}<span class="lnr lnr-arrow-right"></span></a>
+						<a href="category.html" style="font-family:'Spartan', sans-serif">{% trans 'Login' %}</a>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Banner Area -->
+
+	<!--================Login Box Area =================-->
+	<section class="login_box_area section_gap">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="login_box_img">
+						<img class="img-fluid" src="{% static 'img/login.png' %}" alt="">
+						<div class="hover">
+							<div class="container">
+								<h2 style="color:#fff;text-align:center">{% trans 'New to our website?' %}</h2><br>
+							<a class="primary-btn mt-1"  href="{% url 'registration_register' %}">{% trans 'Create an Account' %}</a>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="login_form_inner">
+						<h3>{% trans 'Login' %}</h3>
+							{% for field in form %}
+								{% for error in field.errors %}
+									<p class="error">{{ error }}</p>
+								{% endfor %}
+							{% endfor %}
+							{% for error in form.non_field_errors %}
+								<p class="error">{{ error }}</p>
+							{% endfor %}
+							<input  type="hidden" name="next" value="{{ next }}" />
+							<div class="col-md-12 form-group" style="padding:5px">
+								<input name="username" type="text" class="form-control" style="font-size:2rem;width:80%;margin:auto"   placeholder="Username" id="username">
+							</div>
+							<div class="col-md-12 form-group" style="padding:5px">
+								<input name="password"  type="password" class="form-control" style="font-size:2rem;width:80%;margin:auto"  placeholder="Password" id="password">
+							</div>
+							<div class="col-md-12 form-group">
+								<div class="creat_account">
+									<input type="checkbox" id="f-option2" name="selector">
+									<label for="f-option2">{% trans 'Keep me logged in' %}</label>
+								</div>
+							</div>
+							<div class="col-md-12 form-group">
+								<a href="{% url 'registration_register' %}">
+                                    <button class="btn primary-btn fa-1x" type="submit">{% trans 'Log In' %}</button></a>
+							</div>
+                        <a href="/" style="color:#000">{% trans 'Back to web site' %}</a>
+							{% for message in messages %}
+								<p id="messages">{{message}}</p>
+							{% endfor %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</form>
+
 {% endblock %}
 
 
 {% comment %}
-**registration/registration_complete.html**
+**registration/login.html**
 
-Used after successful completion of the registration form. This
-template has no context variables of its own, and should simply inform
-the user that an email containing account-activation information has
-been sent.
+It's your responsibility to provide the login form in a template called
+registration/login.html by default. This template gets passed four
+template context variables:
+
+``form``
+    A Form object representing the login form. See the forms
+    documentation for more on Form objects.
+
+``next``
+    The URL to redirect to after successful login. This may contain a
+    query string, too.
+
+``site``
+    The current Site, according to the SITE_ID setting. If you don't
+    have the site framework installed, this will be set to an instance
+    of RequestSite, which derives the site name and domain from the
+    current HttpRequest.
+
+``site_name``
+    An alias for site.name. If you don't have the site framework
+    installed, this will be set to the value of
+    request.META['SERVER_NAME']. For more on sites, see The
+    "sites" framework.
 {% endcomment %}

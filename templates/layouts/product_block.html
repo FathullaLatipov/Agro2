@@ -215,7 +215,7 @@
                     $('#message').append(`<div style="padding:5px">
                         <div id="inner-message" class="alert alert-success">
                             <button type="button" class="close" data-dismiss="alert">&times;</button>
-                            Added to wishlist
+                            {% trans 'Added to wishlist' %}
                         </div>
                     </div>`);
                     element.innerHTML = '<span class="lnr" style="background-color:#EB5757;padding:10px;border-radius:50%"> <img src="{% static 'img/features/like.png' %}" style="width:20px;margin-top:-4px" alt=""> </span>'
@@ -223,7 +223,7 @@
                     $('#message').append(`<div style="padding:5px">
                         <div id="inner-message" class="alert alert-success">
                             <button type="button" class="close" data-dismiss="alert">&times;</button>
-                            Removed from wishlist
+                            {% trans 'Removed from wishlist' %}
                         </div>
                     </div>`);
                     element.innerHTML = '<span class="lnr" style="background-color:#EB5757;padding:10px;border-radius:50%"> <img src="{% static 'img/features/love.png' %}" style="width:20px;margin-top:-4px" alt=""> </span>'

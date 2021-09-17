@@ -86,6 +86,7 @@
         <div class="flip-card-front" style="border-radius:30px">
             <img src="{{ product.image.url }}"  style="max-width:250px;width:100%;height:250px;border-radius:20px;background:#fff">
         </div>
+      <a href="{% url 'products:detail' pk=product.pk %}">
         <div class="flip-card-back" style="border-radius:20px">
             <h2 style="margin-top:10px">{{ product.title }}</h2>
             <div class="texttt">
@@ -94,7 +95,7 @@
                     {{ product.product_long_description|safe }}</p>
             </div>
             <div class="container">
-                <div class="prd-bottom" style="padding:0px 25px;margin-top:10%">
+                <div class="prd-bottom" style="padding:0px 54px;margin-top:1%">
                     <a style="color:#fff;font-weight:500;border-radius:50px"  onclick="add_to_cart(this, {{ product.pk }})"
                        class="social-info">
                         {% if product|in_cart:request %}
@@ -121,17 +122,18 @@
                         </p>
                     </a>
 
-                    <a href="{% url 'products:detail' pk=product.pk %}" class="social-info">
-                            <span class="lnr lnr-move"
-                                  style="background-color:#EB5757;padding:10px;border-radius:50%;color:#fff"></span>
-                        <p class="hover-text" style="padding:7px;color:#222; font-size:22px font-weight:600">
+<!--                    <a href="{% url 'products:detail' pk=product.pk %}" class="social-info">-->
+<!--                            <span class="lnr lnr-move"-->
+<!--                                  style="background-color:#EB5757;padding:10px;border-radius:50%;color:#fff"></span>-->
+<!--                        <p class="hover-text" style="padding:7px;color:#222; font-size:22px font-weight:600">-->
 
-                        </p>
-                    </a>
+<!--                        </p>-->
+<!--                    </a>-->
                 </div>
             </div>
         </div>
-    </div>
+        </div>
+    </a>
 </div>
 
                 </div>
