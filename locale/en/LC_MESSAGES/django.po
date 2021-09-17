@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-17 22:16+0500\n"
+"POT-Creation-Date: 2021-09-17 22:23+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -257,7 +257,7 @@ msgid "Learn More"
 msgstr ""
 
 #: .\templates\index.html:133
-msgid "Fruit import"
+msgid "Import fruits"
 msgstr ""
 
 #: .\templates\index.html:141
@@ -266,6 +266,22 @@ msgstr ""
 
 #: .\templates\index.html:149
 msgid "Import parsley"
+msgstr ""
+
+#: .\templates\index.html:157 .\templates\index.html:263
+msgid "Dried fruits"
+msgstr ""
+
+#: .\templates\index.html:158 .\templates\index.html:227
+msgid "Fruits"
+msgstr ""
+
+#: .\templates\index.html:159 .\templates\index.html:240
+msgid "Vegetables"
+msgstr ""
+
+#: .\templates\index.html:160 .\templates\index.html:252
+msgid "Parsley"
 msgstr ""
 
 #: .\templates\index.html:176
@@ -286,22 +302,6 @@ msgstr "Return policy"
 
 #: .\templates\index.html:216
 msgid "Category"
-msgstr ""
-
-#: .\templates\index.html:227
-msgid "Fruits"
-msgstr ""
-
-#: .\templates\index.html:240
-msgid "Vegetables"
-msgstr ""
-
-#: .\templates\index.html:252
-msgid "Parsley"
-msgstr ""
-
-#: .\templates\index.html:263
-msgid "Dried fruits"
 msgstr ""
 
 #: .\templates\index.html:284
