@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-18 18:18+0500\n"
+"POT-Creation-Date: 2021-09-18 18:21+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -552,6 +552,10 @@ msgstr ""
 #: .\templates\shopping-cart.html:13 .\templates\single-product.html:13
 #: .\templates\wishlist.html:12
 msgid "Home"
+msgstr ""
+
+#: .\templates\checkout2.html:100
+msgid "Purchase"
 msgstr ""
 
 #: .\templates\contact.html:10 .\templates\layouts\footer.html:354

@@ -97,7 +97,7 @@
                                 <span>Address</span>
                                 <input type="text" class="form-control" id="zip" name="address" value="{{ form.instance.address|default:'' }}">
                             </div>
-                            <button type="submit" style="font-size:20px;margin:auto;width:200px" class="btn btn-primary">Procced to PayPal</button>
+                            <button type="submit" style="font-size:20px;margin:auto;width:200px" class="btn btn-primary">{% trans 'Purchase' %}</button>
                         </form>
                     </div>
                     <div class="col-lg-4">
