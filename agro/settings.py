@@ -166,9 +166,11 @@ REST_FRAMEWORK = {
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+SITE_ID = 1
+
 try:
     from .settings_local import *
 except ImportError:
     pass
 
-SITE_ID = 1
+

@@ -10,7 +10,6 @@ urlpatterns = [
 ]
 
 urlpatterns += i18n_patterns(
-    # path('accounts/', include('registration.backends.default.urls')),
     path('accounts/', include('allauth.urls')),
     path('admin/', admin.site.urls),
     path('api/', include('api.urls', namespace='api')),
