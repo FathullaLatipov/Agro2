@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-18 18:21+0500\n"
+"POT-Creation-Date: 2021-09-18 19:56+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -682,19 +682,23 @@ msgstr "Sabzavotlar importi"
 msgid "Import parsley"
 msgstr "Ko'katlar importi"
 
-#: .\templates\index.html:157 .\templates\index.html:263
+#: .\templates\index.html:157 .\templates\index.html:272
+#: .\templates\index.html:275
 msgid "Dried fruits"
 msgstr "Quruq mahsulotlar"
 
 #: .\templates\index.html:158 .\templates\index.html:227
+#: .\templates\index.html:231
 msgid "Fruits"
 msgstr "Mevalar"
 
-#: .\templates\index.html:159 .\templates\index.html:240
+#: .\templates\index.html:159 .\templates\index.html:243
+#: .\templates\index.html:247
 msgid "Vegetables"
 msgstr "Sabzavotlar"
 
-#: .\templates\index.html:160 .\templates\index.html:252
+#: .\templates\index.html:160 .\templates\index.html:258
+#: .\templates\index.html:261
 msgid "Parsley"
 msgstr "Ko'katlar"
 
@@ -718,19 +722,19 @@ msgstr "Qaytarish siyosati"
 msgid "Category"
 msgstr "Bolimlar"
 
-#: .\templates\index.html:284
+#: .\templates\index.html:296
 msgid "Latest Products"
 msgstr "Mahsulotramiz"
 
-#: .\templates\index.html:347
+#: .\templates\index.html:359
 msgid "Hours"
 msgstr "Soat"
 
-#: .\templates\index.html:373
+#: .\templates\index.html:385
 msgid "Minutes"
 msgstr "Daqiqa"
 
-#: .\templates\index.html:399
+#: .\templates\index.html:411
 msgid "Seconds"
 msgstr "Soniya"
 
