@@ -1,0 +1,47 @@
+{% extends "layouts/base.html" %}
+{% load i18n %}
+{% load static %}
+{% load mytags %}
+
+{% block head_title %}{% trans "Sign In" %}{% endblock %}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+{% block content %}
+
+
+<div class="container">
+    <h1 class="text-center">{% trans "Sign In" %}</h1>
+    <div class="row" style="background:#ededed">
+        <div class="col-md-6">
+            <img class="img-fluid" src="{% static 'img/login.png' %}" alt="">
+            <br>
+        </div>
+        <div class="col-md-6" style="margin-top:13%">
+            <h3 class="text-center">{% trans 'If you have not created an account yet,' %}<br> {% trans 'then please' %}
+                <a href="{{ signup_url }}" style="color:#888">{% trans 'Sign up' %}</a>{% trans 'first.' %}</h3>
+
+            <form class="login p-2" method="POST" action="{% url 'account_login' %}">
+                {% csrf_token %}
+                <div class="myform m-auto">
+
+
+                    <label for="id_login" style="color:#000">{% trans 'Username' %}</label>
+                    <input type="text" class="form-control"  name="login" placeholder="Username" style="margin:5px;box-shadow:3px 2px 1px 1px #888;font-size:1.5rem;width:80%" autocomplete="username" maxlength="150" required id="id_login">
+                    <br>
+                     <label for="id_password" style="color:#000">{% trans 'Password' %}</label>
+                    <input type="password" class="form-control"  name="password" placeholder="Password" style="margin:5px;box-shadow:3px 2px 1px 1px #888;font-size:1.5rem;width:80%" autocomplete="current-password"  required id="id_password">
+                    <br>
+                    <button class="primaryAction btn btn-outline-primary fa-1x" type="submit">{% trans "Sign In" %}
+                    </button>
+                </div>
+
+            </form>
+            <br>
+        </div>
+    </div>
+    <br>
+</div>
+<br>
+
+
+{% endblock %}

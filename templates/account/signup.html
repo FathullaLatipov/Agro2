@@ -1,0 +1,38 @@
+{% extends "layouts/base.html" %}
+{% load static %}
+{% load i18n %}
+
+{% block head_title %}{% trans "Signup" %}{% endblock %}
+
+{% block content %}
+<h1 class="text-center">{% trans "Sign Up" %}</h1>
+
+<p class="text-center">{% trans 'Already have an account? Then please' %} <a href="{{ login_url }}" style="color:#888">{% trans 'Sign in' %}</a>.<br></p><br>
+<div class="container" >
+  <div class="row" style="background:#ededed">
+    <div class="col-md-6">
+      <img class="img-fluid" src="{% static 'img/login.png' %}" alt="">
+      <br>
+    </div>
+    <div class="col-md-6" style="margin-top:13%">
+      <form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
+  {% csrf_token %}
+  <label for="id_username">{% trans 'Username' %}:</label>
+  <input type="text" name="username" class="form-control" placeholder="{% trans 'Username' %}" style="font-size:1.5rem;box-shadow:3px 2px 1px 1px #888;margin-top:4px" autocomplete="username"  minlength="3" maxlength="150" required id="id_username">
+   <label for="id_email">{% trans 'Email' %}:</label>
+  <input type="text" name="email" class="form-control" placeholder="{% trans 'Email address' %}" style="font-size:1.5rem;box-shadow:3px 2px 1px 1px #888;margin-top:4px" autocomplete="email"   required id="id_email">
+    <label for="id_password1">{% trans 'Password' %}:</label>
+  <input type="password" name="password1" class="form-control" placeholder="{% trans 'Password' %}" style="font-size:1.5rem;box-shadow:3px 2px 1px 1px #888;margin-top:4px" autocomplete="new-password"  required id="id_password1">
+    <label for="id_password2">{% trans 'Confirm password' %}:</label>
+        <br>
+  <input type="password" name="password2" class="form-control" placeholder="{% trans 'Confirm password' %}" style="font-size:1.5rem;box-shadow:3px 2px 1px 1px #888;margin-top:4px" autocomplete="new-password"  required id="id_password2">
+  <br><button type="submit" class="btn btn-outline-primary fa-1x">{% trans "Sign Up" %} &raquo;</button>
+</form>
+    </div>
+    <br>
+  </div>
+  <br>
+</div>
+<br>
+
+{% endblock %}

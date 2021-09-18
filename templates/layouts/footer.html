@@ -1,7 +1,6 @@
 {% load static %}
 {% load i18n %}
-{% load static %}
-{% load i18n %}
+
 <style>
 
 .footerStart {
@@ -294,14 +293,13 @@
                 <div class="col-md-4">
                     <div class="footerFirst">
                         <h3 class="footerName">{% trans 'About Agro Organic cop.' %}</h3>
-                        <p class="footerText">{% trans 'AGRO ORGANIC FOOD – является экспортёром и импортёром фруктов, овощей и сухофруктов и заинтересована в поддержании своей репутации.' %}</p>
+                        <p class="footerText">{% blocktrans %} AGRO ORGANIC FOOD – является экспортёром и импортёром фруктов, овощей и сухофруктов и заинтересована в поддержании своей репутации.{% endblocktrans %}</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="footerSecond">
                         <h3 class="footerName">{% trans 'Location Store' %}</h3>
-                        <a href="#" class="footerLink"><i class="fas fa-map-marker-alt footerLinks"></i> Your
-                            location</a>
+                        <a href="#" class="footerLink"><i class="fas fa-map-marker-alt footerLinks"></i>{% trans 'Your location' %}</a>
                         <a href="#" class="footerLink"><i class="fas fa-phone-alt footerLinks"></i>+998 90 123 45
                             67</a>
                         <a href="#" class="footerLink"><i
