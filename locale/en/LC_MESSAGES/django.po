@@ -619,7 +619,7 @@ msgstr "$."
 
 #: .\templates\contact.html:10 .\templates\layouts\footer.html:354
 msgid "Contacts"
-msgstr ""
+msgstr "contacts"
 
 #: .\templates\contact.html:13 .\templates\layouts\header.html:72
 msgid "Contact"
