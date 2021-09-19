@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-18 19:56+0500\n"
+"POT-Creation-Date: 2021-09-20 01:04+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -596,9 +596,68 @@ msgstr "Корзина"
 msgid "Home"
 msgstr "Главная"
 
+#: .\templates\checkout2.html:60
+msgid "Profile"
+msgstr ""
+
+#: .\templates\checkout2.html:64
+msgid "First name"
+msgstr "Имя"
+
+#: .\templates\checkout2.html:68
+msgid "Last name"
+msgstr "Фамилия"
+
+#: .\templates\checkout2.html:72
+msgid "Phone number"
+msgstr "Ваш номер"
+
+#: .\templates\checkout2.html:77 .\templates\single-product.html:186
+msgid "Email Address"
+msgstr "Ваш email"
+
+#: .\templates\checkout2.html:81
+msgid "Country"
+msgstr "Страна"
+
+#: .\templates\checkout2.html:85
+msgid "Country/State"
+msgstr "Штат"
+
+#: .\templates\checkout2.html:89
+msgid "Postcode/ZIP"
+msgstr "Zip"
+
+#: .\templates\checkout2.html:93
+msgid "Town/City"
+msgstr "Город"
+
+#: .\templates\checkout2.html:97
+msgid "Address"
+msgstr "Ардес"
+
 #: .\templates\checkout2.html:100
 msgid "Purchase"
 msgstr "Купить"
+
+#: .\templates\checkout2.html:105
+msgid "Your Order"
+msgstr "Ваша корзина"
+
+#: .\templates\checkout2.html:107
+msgid "Product"
+msgstr "Продукты"
+
+#: .\templates\checkout2.html:107 .\templates\checkout2.html:115
+msgid "Total"
+msgstr "Общий"
+
+#: .\templates\checkout2.html:109 .\templates\checkout2.html:115
+#: .\templates\shopping-cart.html:48 .\templates\shopping-cart.html:58
+#: .\templates\shopping-cart.html:81 .\templates\shopping-cart.html:82
+#: .\templates\single-product.html:42
+msgid "som"
+msgstr "Рубль"
 
 #: .\templates\contact.html:10 .\templates\layouts\footer.html:354
 msgid "Contacts"
@@ -661,90 +720,94 @@ msgstr "Цена"
 msgid "Created_at"
 msgstr "Время Покупки"
 
-#: .\templates\index.html:124 .\templates\index.html:132
-#: .\templates\index.html:140 .\templates\index.html:148
+#: .\templates\index.html:165 .\templates\index.html:173
+#: .\templates\index.html:181 .\templates\index.html:189
 msgid "Export"
 msgstr "Экспрот"
 
-#: .\templates\index.html:125 .\templates\index.html:133
-#: .\templates\index.html:141 .\templates\index.html:149
+#: .\templates\index.html:166 .\templates\index.html:174
+#: .\templates\index.html:182 .\templates\index.html:190
 msgid "And"
 msgstr "и"
 
-#: .\templates\index.html:125
+#: .\templates\index.html:166
 msgid "Import of dried fruits"
 msgstr "Импорт Сухофруктов"
 
-#: .\templates\index.html:127 .\templates\index.html:135
-#: .\templates\index.html:143 .\templates\index.html:151
+#: .\templates\index.html:168 .\templates\index.html:176
+#: .\templates\index.html:184 .\templates\index.html:192
 msgid "Learn More"
 msgstr "Читать еще"
 
-#: .\templates\index.html:133
+#: .\templates\index.html:174
 msgid "Import fruits"
 msgstr "Импорт фруктов"
 
-#: .\templates\index.html:141
+#: .\templates\index.html:182
 msgid "Import of vegetables"
 msgstr "Импорт овощей"
 
-#: .\templates\index.html:149
+#: .\templates\index.html:190
 msgid "Import parsley"
 msgstr "Импорт зеленей"
 
-#: .\templates\index.html:157 .\templates\index.html:272
-#: .\templates\index.html:275
+#: .\templates\index.html:199 .\templates\index.html:323
+#: .\templates\index.html:326
 msgid "Dried fruits"
 msgstr "Сухофрукты"
 
-#: .\templates\index.html:158 .\templates\index.html:227
-#: .\templates\index.html:231
+#: .\templates\index.html:201 .\templates\index.html:276
+#: .\templates\index.html:280
 msgid "Fruits"
 msgstr "Фрукты"
 
-#: .\templates\index.html:159 .\templates\index.html:243
-#: .\templates\index.html:247
+#: .\templates\index.html:203 .\templates\index.html:293
+#: .\templates\index.html:297
 msgid "Vegetables"
 msgstr "Овощи"
 
-#: .\templates\index.html:160 .\templates\index.html:258
-#: .\templates\index.html:261
+#: .\templates\index.html:205 .\templates\index.html:309
+#: .\templates\index.html:312
 msgid "Parsley"
 msgstr "Зелени"
 
-#: .\templates\index.html:176
+#: .\templates\index.html:222
 msgid "Удобная локация"
 msgstr "Удобная локация"
 
-#: .\templates\index.html:187
+#: .\templates\index.html:234
 msgid "Быстрая доставка"
 msgstr "Быстрая доставка"
 
-#: .\templates\index.html:196
+#: .\templates\index.html:244
 msgid "Колл центр"
 msgstr "Колл центр"
 
-#: .\templates\index.html:205
+#: .\templates\index.html:254
 msgid "Политика возврата"
 msgstr "Политика возврата"
 
-#: .\templates\index.html:216
+#: .\templates\index.html:265
 msgid "Category"
 msgstr "Категория"
 
-#: .\templates\index.html:296
+#: .\templates\index.html:347
 msgid "Latest Products"
 msgstr "Продукты"
 
-#: .\templates\index.html:359
+#: .\templates\index.html:408
+msgid "Sale"
+msgstr "Скидка"
+
+#: .\templates\index.html:422
 msgid "Hours"
 msgstr "Часы"
 
-#: .\templates\index.html:385
+#: .\templates\index.html:448
 msgid "Minutes"
 msgstr "Минуты"
 
-#: .\templates\index.html:411
+#: .\templates\index.html:474
 msgid "Seconds"
 msgstr "Секунды"
 
@@ -1222,6 +1285,10 @@ msgstr "Низкий"
 msgid "High"
 msgstr "Высокий"
 
+#: .\templates\shop.html:137
+msgid "sum"
+msgstr "Рубль"
+
 #: .\templates\shop.html:170 .\templates\single-product.html:262
 msgid "Added"
 msgstr ""
@@ -1275,12 +1342,6 @@ msgstr "Отправить сейчас"
 #: .\templates\single-product.html:181
 msgid "Your Full name"
 msgstr "Ваша имя"
-
-#: .\templates\single-product.html:186
-#, fuzzy
-#| msgid "Enter email address"
-msgid "Email Address"
-msgstr "Ваш email"
 
 #: .\templates\single-product.html:191
 msgid "Phone Number"
@@ -1362,6 +1423,9 @@ msgstr ""
 msgid "Wishlist"
 msgstr "Избранные"
 
+#~ msgid "Check payments"
+#~ msgstr "Безопасная оплата"
+
 #~ msgid "Fruit import"
 #~ msgstr "Импорт фруктов"
 
@@ -1422,9 +1486,6 @@ msgstr "Избранные"
 
 #~ msgid "24/7 Support"
 #~ msgstr "24/7 Поддержка"
-
-#~ msgid "Secure Payment"
-#~ msgstr "Безопасная оплата"
 
 #~ msgid "Newsletter"
 #~ msgstr "Новостная рассылка"

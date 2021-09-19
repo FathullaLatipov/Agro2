@@ -39,7 +39,7 @@
 				<div class="col-lg-5 offset-lg-1">
 					<div class="s_product_text">
 						<h3>{{ object.title }}</h3>
-						<h2>{{ object.real_price }}som</h2>{% if object.is_discount %}<strike>{{ object.price }}som</strike>{% endif %}
+						<h2>{{ object.real_price }}{% trans 'som' %}</h2>{% if object.is_discount %}<strike>{{ object.price }}{% trans 'som' %}</strike>{% endif %}
 						<ul class="list">
 							<li><a class="active" style="font-weight:bold" href="#"><span style="font-weight:bold">{% trans 'Category:' %}</span>{{ object.category }}</a></li>
 <!--							<li><a class="active" href="#"><span>Tag:</span>{% for tag in object.tags.all %}{{ tag.title }}{% if not forloop.last %}, {% endif %}{% endfor %}</a></li>-->

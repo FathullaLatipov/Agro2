@@ -55,6 +55,46 @@
   transform: rotateY(250deg);
 }
 
+.box {
+  margin: 20px auto;
+  width: 150px;
+}
+.badge {
+  background: #EB5757;
+  color: #fff;
+  height: 76px;
+  width: 82px;
+  border-radius: 50%;
+  font-size: 28px;
+  text-align: center;
+  padding:10px 14px;
+  box-shadow: 0 0 3px gray;
+  small {
+    text-decoration: line-through;
+    font-size: 22px;
+  }
+  large {
+    font-size: 34px;
+  }
+}
+
+@media only screen and (max-width:790px){
+.box{
+    float: right;
+    position: absolute;
+    margin-left: 80%;
+}
+}
+
+@media (min-width:900px) {
+.box{
+    float: right;
+    position: absolute;
+    margin-left: 30%;
+    margin-top: -19%;
+}
+}
+
  .swiper {
         width: 100%;
         height: 40vh;
@@ -110,58 +150,63 @@
 <!--}-->
 
 
+
 </style>
 <!-- start banner Area -->
- <section id="section-1">
+<section id="section-1">
     <div class="content-slider">
-      <input type="radio" id="banner1" class="sec-1-input" name="banner" checked>
-      <input type="radio" id="banner2" class="sec-1-input" name="banner">
-      <input type="radio" id="banner3" class="sec-1-input" name="banner">
-      <input type="radio" id="banner4" class="sec-1-input" name="banner">
-      <div class="slider" style="">
-        <div id="top-banner-1" class="banner">
-          <div class="banner-inner-wrapper" style="background-color: rgba(0, 0, 0, 0.2);">
-            <h2 style="color:#fff;font-family:'Spartan', sans-serif">{% trans 'Export' %}</h2>
-            <h1 style="color:#fff;font-family:'Spartan', sans-serif">{% trans 'And' %}<br>{% trans 'Import of dried fruits' %}</h1>
-            <div class="line"></div>
-            <div class="learn-more-button"><a href="{% url 'contact:blog' %}">{% trans 'Learn More' %}</a></div>
-          </div>
+        <input type="radio" id="banner1" class="sec-1-input" name="banner" checked>
+        <input type="radio" id="banner2" class="sec-1-input" name="banner">
+        <input type="radio" id="banner3" class="sec-1-input" name="banner">
+        <input type="radio" id="banner4" class="sec-1-input" name="banner">
+        <div class="slider" style="">
+            <div id="top-banner-1" class="banner">
+                <div class="banner-inner-wrapper" style="background-color: rgba(0, 0, 0, 0.2);">
+                    <h2 style="color:#fff;font-family:'Spartan', sans-serif">{% trans 'Export' %}</h2>
+                    <h1 style="color:#fff;font-family:'Spartan', sans-serif">{% trans 'And' %}<br>{% trans 'Import of dried fruits' %}</h1>
+                    <div class="line"></div>
+                    <div class="learn-more-button"><a href="{% url 'contact:blog' %}">{% trans 'Learn More' %}</a></div>
+                </div>
+            </div>
+            <div id="top-banner-2" class="banner">
+                <div class="banner-inner-wrapper" style="background-color: rgba(0, 0, 0, 0.2);">
+                    <h2 style="color:#fff;;font-family:'Spartan', sans-serif">{% trans 'Export' %}</h2>
+                    <h1 style="color:#fff;font-family:'Spartan', sans-serif">{% trans 'And' %}<br>{% trans 'Import fruits' %}</h1>
+                    <div class="line"></div>
+                    <div class="learn-more-button"><a href="{% url 'contact:blog' %}">{% trans 'Learn More' %}</a></div>
+                </div>
+            </div>
+            <div id="top-banner-3" class="banner">
+                <div class="banner-inner-wrapper" style="background-color: rgba(0, 0, 0, 0 .2);">
+                    <h2 style="color:#fff;font-family:'Spartan', sans-serif">{% trans 'Export' %}</h2>
+                    <h1 style="color:#fff;font-family:'Spartan', sans-serif">{% trans 'And' %}<br>{% trans 'Import of vegetables' %}</h1>
+                    <div class="line"></div>
+                    <div class="learn-more-button"><a href="{% url 'contact:blog' %}">{% trans 'Learn More' %}</a></div>
+                </div>
+            </div>
+            <div id="top-banner-4" class="banner" style="background-color: rgba(0, 0, 0, 0, .5);">
+                <div class="banner-inner-wrapper">
+                    <h2 style="color:#fff;font-family:'Spartan', sans-serif">{% trans 'Export' %}</h2>
+                    <h1 style="color:#fff;font-family:'Spartan', sans-serif">{% trans 'And' %}<br>{% trans 'Import parsley' %}</h1>
+                    <div class="line"></div>
+                    <div class="learn-more-button"><a href="{% url 'contact:blog' %}">{% trans 'Learn More' %}</a></div>
+                </div>
+            </div>
         </div>
-        <div id="top-banner-2" class="banner" >
-          <div class="banner-inner-wrapper" style="background-color: rgba(0, 0, 0, 0.2);">
-            <h2 style="color:#fff;;font-family:'Spartan', sans-serif">{% trans 'Export' %}</h2>
-            <h1 style="color:#fff;;font-family:'Spartan', sans-serif">{% trans 'And' %}<br>{% trans 'Import fruits' %}</h1>
-            <div class="line"></div>
-            <div class="learn-more-button"><a href="{% url 'contact:blog' %}">{% trans 'Learn More' %}</a></div>
-          </div>
-        </div>
-        <div id="top-banner-3" class="banner">
-          <div class="banner-inner-wrapper" style="background-color: rgba(0, 0, 0, 0 .2);">
-            <h2 style="color:#fff;font-family:'Spartan', sans-serif">{% trans 'Export' %}</h2>
-            <h1 style="color:#fff;font-family:'Spartan', sans-serif">{% trans 'And' %}<br>{% trans 'Import of vegetables' %}</h1>
-            <div class="line"></div>
-            <div class="learn-more-button"><a href="{% url 'contact:blog' %}">{% trans 'Learn More' %}</a></div>
-          </div>
-        </div>
-        <div id="top-banner-4" class="banner" style="background-color: rgba(0, 0, 0, 0, .5);">
-          <div class="banner-inner-wrapper">
-            <h2 style="color:#fff;font-family:'Spartan', sans-serif">{% trans 'Export' %}</h2>
-            <h1 style="color:#fff;font-family:'Spartan', sans-serif">{% trans 'And' %}<br>{% trans 'Import parsley' %}</h1>
-            <div class="line"></div>
-            <div class="learn-more-button"><a href="{% url 'contact:blog' %}">{% trans 'Learn More' %}</a></div>
-          </div>
-        </div>
-      </div>
-      <nav>
-        <div class="controls">
-          <label for="banner1"><span class="progressbar"><span class="progressbar-fill"></span></span><span>01</span> {% trans 'Dried fruits' %}</label>
-          <label for="banner2"><span class="progressbar"><span class="progressbar-fill"></span></span><span>02</span> {% trans 'Fruits' %}</label>
-          <label for="banner3"><span class="progressbar"><span class="progressbar-fill"></span></span><span>03</span> {% trans 'Vegetables' %}</label>
-          <label for="banner4"><span class="progressbar"><span class="progressbar-fill"></span></span><span>04</span> {% trans 'Parsley' %}</label>
-        </div>
-      </nav>
+        <nav>
+            <div class="controls">
+                <label for="banner1"><span class="progressbar"><span
+                        class="progressbar-fill"></span></span><span>01</span> {% trans 'Dried fruits' %}</label>
+                <label for="banner2"><span class="progressbar"><span
+                        class="progressbar-fill"></span></span><span>02</span> {% trans 'Fruits' %}</label>
+                <label for="banner3"><span class="progressbar"><span
+                        class="progressbar-fill"></span></span><span>03</span> {% trans 'Vegetables' %}</label>
+                <label for="banner4"><span class="progressbar"><span
+                        class="progressbar-fill"></span></span><span>04</span> {% trans 'Parsley' %}</label>
+            </div>
+        </nav>
     </div>
-  </section>
+</section>
 
 
 <section class="features-area section_gap p-5 ">
@@ -170,10 +215,11 @@
             <!-- single features -->
             <div class="col-lg-3 col-md-6 col-sm-6 col-3">
                 <div class="single-features">
-                            <div class="css-square">
-                                <a href="/neo/#2" id="#2"> <img src="{% static '/img/icons/location.png' %}" style="max-width:50px;width:100%" alt=""></a>
-                            </div>
-                    <p class="info1" >{% trans 'Удобная локация' %}</p>
+                    <div class="css-square">
+                        <a href="/neo/#2" id="#2"> <img src="{% static '/img/icons/location.png' %}"
+                                                        style="max-width:50px;width:100%" alt=""></a>
+                    </div>
+                    <p class="info1">{% trans 'Удобная локация' %}</p>
 
                 </div>
 
@@ -181,27 +227,30 @@
             <!-- single features -->
             <div class="col-lg-3 col-md-6 col-sm-6 col-3">
                 <div class="single-features">
-                            <div class="css-square">
-                                <a href="/neo/#4" id="#4">  <img src="{% static '/img/icons/car.png' %}" style="max-width:60px;width:100%" alt=""></a>
-                            </div>
+                    <div class="css-square">
+                        <a href="/neo/#4" id="#4"> <img src="{% static '/img/icons/car.png' %}"
+                                                        style="max-width:60px;width:100%" alt=""></a>
+                    </div>
                     <p class="info2">{% trans 'Быстрая доставка' %}</p>
                 </div>
             </div>
             <!-- single features -->
             <div class="col-lg-3 col-md-6 col-sm-6 col-3">
                 <div class="single-features">
-                            <div class="css-square">
-                                <a href="/neo/#3" id="#3"><img src="{% static '/img/icons/call-center.png' %}" style="max-width:50px;width:100%" alt=""></a>
-                            </div>
+                    <div class="css-square">
+                        <a href="/neo/#3" id="#3"><img src="{% static '/img/icons/call-center.png' %}"
+                                                       style="max-width:50px;width:100%" alt=""></a>
+                    </div>
                     <p class="info1">{% trans 'Колл центр' %}</p>
                 </div>
             </div>
             <!-- single features -->
             <div class="col-lg-3 col-md-6 col-sm-6 col-3">
                 <div class="single-features">
-                            <div class="css-square">
-                                <a href="/neo/#1" id="#1"> <img src="{% static '/img/icons/dollar.png' %}" style="max-width:50px;width:100%" alt=""></a>
-                            </div>
+                    <div class="css-square">
+                        <a href="/neo/#1" id="#1"> <img src="{% static '/img/icons/dollar.png' %}"
+                                                        style="max-width:50px;width:100%" alt=""></a>
+                    </div>
                     <p class="info1">{% trans 'Политика возврата' %}</p>
                 </div>
             </div>
@@ -213,53 +262,55 @@
 <!-- Start category Area -->
 <section class="category-area">
     <div class="container">
-         <h3 class="text-center" style="font-weight:bold">{% trans 'Category' %}</h3>
+        <h3 class="text-center" style="font-weight:bold">{% trans 'Category' %}</h3>
         <div class="row justify-content-center">
             <div class="col-lg-8 col-md-12">
                 <div class="row">
                     <div class="col-lg-6 col-md-6">
-                        <a href="products/?category=1#men"  >
-                         <div class="single-deal">
-                            <div class="overlay"></div>
-                              <img class="img-fluid w-100" src="{% static 'img/category/frukti.jpg' %}" alt="">
-                                <div class="deal-details">
-                                    {% for cat in cats %}
-                                         <h6 class="deal-title">{% trans 'Fruits' %}</h6>
-                                    {% endfor %}
-                                </div>
-                              <h6 class="deal-title2" style="font-family:'Spartan', sans-serif;font-weight:600">
-                                        {% trans 'Fruits' %}
-                                    </h6>
-                          </div>
-                         </a>
-                    </div>
-                   <div class="col-lg-6 col-md-6">
                         <a href="products/?category=1#men">
-                         <div class="single-deal">
-                            <div class="overlay" style="border-radius:20px"></div>
-                              <img class="img-fluid w-100" style="border-radius:20px" src="{% static 'img/category/vegetables.jpg' %}" alt="">
+                            <div class="single-deal">
+                                <div class="overlay"></div>
+                                <img class="img-fluid w-100" src="{% static 'img/category/frukti.jpg' %}" alt="">
                                 <div class="deal-details">
                                     {% for cat in cats %}
-                                         <h6 class="deal-title">{% trans 'Vegetables' %}</h6>
+                                    <h6 class="deal-title">{% trans 'Fruits' %}</h6>
                                     {% endfor %}
                                 </div>
-                               <h6 class="deal-title2" style="font-family:'Spartan', sans-serif;font-weight:600">
-                                        {% trans 'Vegetables' %}
-                                    </h6>
-                          </div>
-                         </a>
+                                <h6 class="deal-title2" style="font-family:'Spartan', sans-serif;font-weight:600">
+                                    {% trans 'Fruits' %}
+                                </h6>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <a href="products/?category=1#men">
+                            <div class="single-deal">
+                                <div class="overlay" style="border-radius:20px"></div>
+                                <img class="img-fluid w-100" style="border-radius:20px"
+                                     src="{% static 'img/category/vegetables.jpg' %}" alt="">
+                                <div class="deal-details">
+                                    {% for cat in cats %}
+                                    <h6 class="deal-title">{% trans 'Vegetables' %}</h6>
+                                    {% endfor %}
+                                </div>
+                                <h6 class="deal-title2" style="font-family:'Spartan', sans-serif;font-weight:600">
+                                    {% trans 'Vegetables' %}
+                                </h6>
+                            </div>
+                        </a>
                     </div>
                     <div class="col-lg-6 col-md-6">
                         <div class="single-deal">
                             <div class="overlay" style="width:350px;height:234px"></div>
-                            <img class="img-fluid w-100" style="border-radius:20px" src="{% static 'img/category/zeleny.jpg' %} " alt="">
+                            <img class="img-fluid w-100" style="border-radius:20px"
+                                 src="{% static 'img/category/zeleny.jpg' %} " alt="">
                             <a href="{% static 'img/category/c3.jpg' %} " class="img-pop-up" target="_blank">
                                 <div class="deal-details">
                                     <h6 class="deal-title">{% trans 'Parsley' %}</h6>
                                 </div>
-                                 <h6 class="deal-title2" style="font-family:'Spartan', sans-serif;font-weight:600">
-                                        {% trans 'Parsley' %}
-                                    </h6>
+                                <h6 class="deal-title2" style="font-family:'Spartan', sans-serif;font-weight:600">
+                                    {% trans 'Parsley' %}
+                                </h6>
                             </a>
                         </div>
                     </div>
@@ -271,9 +322,9 @@
                                 <div class="deal-details">
                                     <h6 class="deal-title" style="font-weight:bold">{% trans 'Dried fruits' %}</h6>
                                 </div>
-                                 <h6 class="deal-title2" style="font-family:'Spartan', sans-serif;font-weight:600">
-                                        {% trans 'Dried fruits' %}
-                                    </h6>
+                                <h6 class="deal-title2" style="font-family:'Spartan', sans-serif;font-weight:600">
+                                    {% trans 'Dried fruits' %}
+                                </h6>
                             </a>
                         </div>
                     </div>
@@ -297,23 +348,23 @@
                 </div>
             </div>
         </div>
-            <div id="message">
+        <div id="message">
 
-            </div>
+        </div>
         <div class="row">
             {% for product in products %}
-              <div class="pros col-md-3 m-auto">
-                      {% include 'layouts/product_block.html' %}
-                </div>
+            <div class="pros col-md-3 m-auto">
+                {% include 'layouts/product_block.html' %}
+            </div>
             {% endfor %}
         </div>
 
         <div class="swiper_start prods">
-           <div class="swiper mySwiper">
+            <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
-                     {% for product in products %}
-                        {% include 'layouts/product_block2.html' %}
-                     {% endfor %}
+                    {% for product in products %}
+                    {% include 'layouts/product_block2.html' %}
+                    {% endfor %}
 
                 </div>
                 <div class="swiper-button-next"></div>
@@ -322,120 +373,134 @@
             </div>
         </div>
 
-         </div>
+    </div>
 
 </div>
 <!-- single product slide -->
 <div class="single-product-slider">
-<!--            <div class="container">-->
-<!--                <div class="row justify-content-center">-->
-<!--                    <div class="col-lg-6 text-center">-->
-<!--                        <div class="section-title">-->
-<!--                            <h1>Coming Products</h1>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="row">-->
-<!--                   {% for product in products %}-->
-<!--                    <div class="col-lg-3 col-md-6">-->
-<!--                            {% include 'layouts/product_block.html' %}-->
-<!--                    </div>-->
-<!--                   {% endfor %}-->
-<!--                </div>-->
-<!--            </div>-->
+    <!--            <div class="container">-->
+    <!--                <div class="row justify-content-center">-->
+    <!--                    <div class="col-lg-6 text-center">-->
+    <!--                        <div class="section-title">-->
+    <!--                            <h1>Coming Products</h1>-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--                <div class="row">-->
+    <!--                   {% for product in products %}-->
+    <!--                    <div class="col-lg-3 col-md-6">-->
+    <!--                            {% include 'layouts/product_block.html' %}-->
+    <!--                    </div>-->
+    <!--                   {% endfor %}-->
+    <!--                </div>-->
+    <!--            </div>-->
 </div>
 
 <!-- end product Area -->
 
 
-<div class="clock1" >
-            <div class="sale1">
-                <img src="{% static 'img/banner/sale.png' %}"
-                     style="center;background-size: cover;width: 100%;max-width: 500px;" alt="">
+  <a href="/products/4/">
+        <div class="clock1">
+
+        <div class="box">
+            <div class="badge" style="font-size:14px">
+                <br>
+                <span>{% trans 'Sale' %}</span>
+                <br>
+               <span>30%</span>
             </div>
-            <div class="wrap" style="display:flex;align-items:center;max-width: 720px;width:100%;margin:0px auto">
-                <div class="countdown">
-                    <div class="bloc-time hours" data-init-value="24">
-                        <span class="count-title" style="font-family:'Spartan', sans-serif;font-weight:bold">{% trans 'Hours' %}</span>
+        </div>
+ <img src="{% static 'img/fruits/cherry-2.jpg' %}"
+             style="center;background-size: cover;width: 100%;max-width: 500px;" alt="">
 
-                        <div class="figure hours hours-1">
-                            <span class="top">2</span>
-                            <span class="top-back">
+
+
+    <div class="wrap" style="display:flex;align-items:center;max-width: 720px;width:100%;margin:0px auto">
+        <div class="countdown">
+            <div class="bloc-time hours" data-init-value="24">
+                <span class="count-title"
+                      style="font-family:'Spartan', sans-serif;font-weight:bold">{% trans 'Hours' %}</span>
+
+                <div class="figure hours hours-1">
+                    <span class="top">2</span>
+                    <span class="top-back">
           <span>2</span>
         </span>
-                            <span class="bottom">2</span>
-                            <span class="bottom-back">
+                    <span class="bottom">2</span>
+                    <span class="bottom-back">
           <span>2</span>
         </span>
-                        </div>
+                </div>
 
-                        <div class="figure hours hours-2">
-                            <span class="top">4</span>
-                            <span class="top-back">
+                <div class="figure hours hours-2">
+                    <span class="top">4</span>
+                    <span class="top-back">
           <span>4</span>
         </span>
-                            <span class="bottom">4</span>
-                            <span class="bottom-back">
+                    <span class="bottom">4</span>
+                    <span class="bottom-back">
           <span>4</span>
         </span>
-                        </div>
-                    </div>
-
-                    <div class="bloc-time min" data-init-value="0">
-                        <span class="count-title" style="font-family:'Spartan', sans-serif;font-weight:bold">{% trans 'Minutes' %}</span>
-
-                        <div class="figure min min-1">
-                            <span class="top">0</span>
-                            <span class="top-back">
-          <span>0</span>
-        </span>
-                            <span class="bottom">0</span>
-                            <span class="bottom-back">
-          <span>0</span>
-        </span>
-                        </div>
-
-                        <div class="figure min min-2">
-                            <span class="top">0</span>
-                            <span class="top-back">
-          <span>0</span>
-        </span>
-                            <span class="bottom">0</span>
-                            <span class="bottom-back">
-          <span>0</span>
-        </span>
-                        </div>
-                    </div>
-
-                    <div class="bloc-time sec" data-init-value="0">
-                        <span class="count-title" style="font-family:'Spartan', sans-serif;font-weight:bold">{% trans 'Seconds' %}</span>
-
-                        <div class="figure sec sec-1">
-                            <span class="top">0</span>
-                            <span class="top-back">
-          <span>0</span>
-        </span>
-                            <span class="bottom">0</span>
-                            <span class="bottom-back">
-          <span>0</span>
-        </span>
-                        </div>
-
-                        <div class="figure sec sec-2">
-                            <span class="top">0</span>
-                            <span class="top-back">
-          <span>0</span>
-        </span>
-                            <span class="bottom" style="">0</span>
-                            <span class="bottom-back">
-          <span>0</span>
-        </span>
-                        </div>
-                    </div>
                 </div>
             </div>
+
+            <div class="bloc-time min" data-init-value="0">
+                <span class="count-title" style="font-family:'Spartan', sans-serif;font-weight:bold">{% trans 'Minutes' %}</span>
+
+                <div class="figure min min-1">
+                    <span class="top">0</span>
+                    <span class="top-back">
+          <span>0</span>
+        </span>
+                    <span class="bottom">0</span>
+                    <span class="bottom-back">
+          <span>0</span>
+        </span>
+                </div>
+
+                <div class="figure min min-2">
+                    <span class="top">0</span>
+                    <span class="top-back">
+          <span>0</span>
+        </span>
+                    <span class="bottom">0</span>
+                    <span class="bottom-back">
+          <span>0</span>
+        </span>
+                </div>
+            </div>
+
+            <div class="bloc-time sec" data-init-value="0">
+                <span class="count-title" style="font-family:'Spartan', sans-serif;font-weight:bold">{% trans 'Seconds' %}</span>
+
+                <div class="figure sec sec-1">
+                    <span class="top">0</span>
+                    <span class="top-back">
+          <span>0</span>
+        </span>
+                    <span class="bottom">0</span>
+                    <span class="bottom-back">
+          <span>0</span>
+        </span>
+                </div>
+
+                <div class="figure sec sec-2">
+                    <span class="top">0</span>
+                    <span class="top-back">
+          <span>0</span>
+        </span>
+                    <span class="bottom" style="">0</span>
+                    <span class="bottom-back">
+          <span>0</span>
+        </span>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
+</div>
+  </a>
+
 <br>
 <script>
     function add_to_cart(element,pk){
@@ -469,5 +534,6 @@
           }
         });
     }
+
 </script>
 {% endblock %}

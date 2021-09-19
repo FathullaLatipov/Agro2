@@ -45,7 +45,7 @@
                                         </div>
                                         <div class="product__cart__item__pic">
                                            <p>{{ product.title }}</p>
-                                            <h5>{{ product.real_price }}som</h5>
+                                            <h5>{{ product.real_price }}{% trans 'som' %}</h5>
                                         </div>
                                     </td>
                                     <td class="quantity__item">
@@ -55,7 +55,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td id="price_{{ forloop.counter0 }}" class="cart__price">{{ product.real_price }}som</td>
+                                    <td id="price_{{ forloop.counter0 }}" class="cart__price">{{ product.real_price }}{% trans 'som' %}</td>
                                     <td class="cart__close">
                                         <a onclick="add_to_cart({{ product.pk }})">
                                             <i class="fa fa-close"></i>
@@ -78,8 +78,8 @@
                     <div class="cart__total">
                         <h6>Cart total</h6>
                         <ul>
-                            <li>Subtotal <span>{% get_cart_sum request %}.000som</span></li>
-                            <li>Total <span>{% get_cart_sum request %}.000som</span></li>
+                            <li>Subtotal <span>{% get_cart_sum request %}.000{% trans 'som' %}</span></li>
+                            <li>Total <span>{% get_cart_sum request %}.000{% trans 'som' %}</span></li>
                         </ul>
                         <a href="{% url 'orders:create' %}" class="primary-btn">BUY</a>
                     </div>

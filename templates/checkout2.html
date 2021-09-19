@@ -57,87 +57,63 @@
             <div class="billing_details">
                 <div class="row">
                     <div class="col-lg-8">
-                        <h3>Profile</h3>
+                        <h3>{% trans 'Profile' %}</h3>
                         <form class="row contact_form"  method="POST">
                             {% csrf_token %}
                             <div class="col-md-6 form-group p_star">
-                                <span>First name</span>
+                                <span>{% trans 'First name' %}</span>
                                 <input type="text" class="form-control" name="first_name" value="{{ form.instance.first_name|default:'' }}">
                             </div>
                             <div class="col-md-6 form-group p_star">
-                                 <span>Last name</span>
+                                 <span>{% trans 'Last name' %}</span>
                                 <input type="text" class="form-control"  name="last_name" value="{{ form.instance.last_name|default:'' }}">
                             </div>
                             <div class="col-md-6 form-group p_star">
-                                <span>Phone number</span>
+                                <span>{% trans 'Phone number' %}</span>
 <!--                                <input type="text" class="form-control" name="phone" value="{{ form.instance.phone }}">-->
                                 <input type="text" class="form-control" value="{{ form.instance.phone|default:'' }}" name="phone" >
                             </div>
                             <div class="col-md-6 form-group p_star">
-                                <span>Email Address</span>
+                                <span>{% trans 'Email Address' %}</span>
                                 <input type="text" class="form-control"  name="email" value="{{ form.instance.email|default:'' }}">
                             </div>
                               <div class="col-md-12 form-group p_star">
-                                  <span>Country</span>
+                                  <span>{% trans 'Country' %}</span>
                                 <input type="text" class="form-control" name="country" value="{{ form.instance.country|default:'' }}">
                             </div>
                             <div class="col-md-12 form-group p_star">
-                                <span>Country/State</span>
+                                <span>{% trans 'Country/State' %}</span>
                                 <input type="text" class="form-control"  name="state" value="{{ form.instance.state|default:'' }}">
                             </div>
                             <div class="col-md-12 form-group p_star">
-                                <span>Postcode/ZIP</span>
+                                <span>{% trans 'Postcode/ZIP' %}</span>
                                 <input type="text" class="form-control" id="add2" name="zip" value="{{ form.instance.zip|default:'' }}">
                             </div>
                             <div class="col-md-12 form-group p_star">
-                                <span>Town/City</span>
+                                <span>{% trans 'Town/City' %}</span>
                                 <input type="text" class="form-control" id="city" name="city" value="{{ form.instance.city|default:'' }}">
                             </div>
                             <div class="col-md-12 form-group">
-                                <span>Address</span>
+                                <span>{% trans 'Address' %}</span>
                                 <input type="text" class="form-control" id="zip" name="address" value="{{ form.instance.address|default:'' }}">
                             </div>
-                            <button type="submit" style="font-size:20px;margin:auto;width:200px" class="btn btn-primary">{% trans 'Purchase' %}</button>
+                            <button type="submit" style="font-size:20px;margin:auto;width:200px" class="btn primary-btn ">{% trans 'Purchase' %}</button>
                         </form>
                     </div>
                     <div class="col-lg-4">
                         <div class="order_box">
-                            <h2>Your Order</h2>
+                            <h2>{% trans 'Your Order' %}</h2>
                             <ul class="list">
-                                <li><a href="#">Product <span>Total</span></a></li>
+                                <li><a href="#">{% trans 'Product' %} <span>{% trans 'Total' %}</span></a></li>
                                 {% for product in products %}
-                                    <li>{{ product.title }} <span class="last">{{ product.real_price }}som</span></li>
+                                    <li>{{ product.title }} <span class="last">{{ product.real_price }}{% trans 'som' %}</span></li>
                                 {% endfor %}
                             </ul>
                             <ul class="list list_2">
 <!--                                <li><a href="#">Subtotal <span>$2160.00</span></a></li>-->
 <!--                                <li><a href="#">Shipping <span>Flat rate: $50.00</span></a></li>-->
-                                <li><a href="#">Total <span>{% get_cart_sum request %}.000som</span></a></li>
+                                <li><a href="#">{% trans 'Total' %} <span>{% get_cart_sum request %}{% trans 'som' %}</span></a></li>
                             </ul>
-                            <div class="payment_item">
-                                <div class="radion_btn">
-                                    <input type="radio" id="f-option5" name="selector">
-                                    <label for="f-option5">Check payments</label>
-                                    <div class="check"></div>
-                                </div>
-                                <p>Please send a check to Store Name, Store Street, Store Town, Store State / County,
-                                    Store Postcode.</p>
-                            </div>
-                            <div class="payment_item active">
-                                <div class="radion_btn">
-                                    <input type="radio" id="f-option6" name="selector">
-                                    <label for="f-option6">Paypal </label>
-                                    <img src="{% static 'img/product/card.jpg' %}" alt="">
-                                    <div class="check"></div>
-                                </div>
-                                <p>Pay via PayPal; you can pay with your credit card if you don’t have a PayPal
-                                    account.</p>
-                            </div>
-                            <div class="creat_account">
-                                <input type="checkbox" id="f-option4" name="selector">
-                                <label for="f-option4">I’ve read and accept the </label>
-                                <a href="#">terms & conditions*</a>
-                            </div>
 
                         </div>
                     </div>
