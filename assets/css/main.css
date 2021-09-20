@@ -6591,7 +6591,9 @@ button:hover {
   padding-top: 80px; }
   @media (max-width: 991px) {
     .footer-text {
-      padding-top: 40px; } }
+      padding-top: 40px; }
+
+       }
   .footer-text a,
   .footer-text i {
     color: #ffba00; }
