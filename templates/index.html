@@ -399,15 +399,56 @@
 
   <a href="/products/4/">
         <div class="clock1">
+      <div class="discount ">-15%</div>
+            <style>.discount {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  position: relative;
+  display: inline-block;
+  background: #e57373;
+  width: auto;
+  height: 30px;
+  line-height: 32px;
 
-        <div class="box">
-            <div class="badge" style="font-size:14px">
-                <br>
-                <span>{% trans 'Sale' %}</span>
-                <br>
-               <span>30%</span>
-            </div>
-        </div>
+
+
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  border-radius:4px;
+  padding:0 15px;
+
+}
+.discount:after {
+  content: " ";
+  height: 22px;
+  width: 22px;
+  background:#e57373;
+  position: absolute;
+  top:4px;
+  left:-9px;
+  border-radius:4px;
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  float: left;
+}
+.discount:before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  background: #fff;
+  position: absolute;
+  top: 12px;
+  left: 0px;
+  z-index: 1;
+  border-radius: 10px;
+}</style>
  <img src="{% static 'img/fruits/cherry-2.jpg' %}"
              style="center;background-size: cover;width: 100%;max-width: 500px;" alt="">
 
