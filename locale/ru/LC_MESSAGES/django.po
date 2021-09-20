@@ -883,8 +883,6 @@ msgid "Removed from wishlist"
 msgstr "Удалено из избранных"
 
 #: .\templates\openid\login.html:9
-#, fuzzy
-#| msgid "Sign In"
 msgid "OpenID Sign In"
 msgstr "Войти"
 
