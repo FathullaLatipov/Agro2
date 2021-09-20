@@ -615,7 +615,7 @@ msgstr ""
 #: .\templates\shopping-cart.html:81 .\templates\shopping-cart.html:82
 #: .\templates\single-product.html:42
 msgid "som"
-msgstr "$."
+msgstr "dollar"
 
 #: .\templates\contact.html:10 .\templates\layouts\footer.html:354
 msgid "Contacts"
@@ -1237,7 +1237,7 @@ msgstr ""
 
 #: .\templates\shop.html:137
 msgid "sum"
-msgstr "$."
+msgstr "dollar"
 
 #: .\templates\shop.html:170 .\templates\single-product.html:262
 msgid "Added"
