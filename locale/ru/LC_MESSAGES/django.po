@@ -905,7 +905,7 @@ msgstr ""
 #: .\templates\registration\activation_complete.html:4
 #: .\templates\registration\activation_complete_admin_pending.html:4
 msgid "Account Activated"
-msgstr ""
+msgstr "Аккаунт"
 
 #: .\templates\registration\activation_complete.html:8
 #: .\templates\registration\activation_complete_admin_pending.html:8

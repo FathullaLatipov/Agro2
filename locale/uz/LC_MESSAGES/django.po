@@ -655,7 +655,7 @@ msgstr "Contactlar"
 
 #: .\templates\contact.html:13 .\templates\layouts\header.html:72
 msgid "Contact"
-msgstr "Contact"
+msgstr "Contactlar"
 
 #: .\templates\contact.html:35
 msgid "Santa monica bullevad"
