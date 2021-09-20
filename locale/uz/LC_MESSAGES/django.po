@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-20 16:42+0500\n"
+"POT-Creation-Date: 2021-09-20 16:48+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -568,6 +568,18 @@ msgid ""
 "<strong>Note:</strong> you can still <a href=\"%(email_url)s\">change your e-"
 "mail address</a>."
 msgstr ""
+
+#: .\templates\blog.html:30
+msgid "Our Company"
+msgstr "Bizning kompaniya"
+
+#: .\templates\blog.html:48
+msgid "Why Choose Us"
+msgstr "Nega bizni tanlaysiz"
+
+#: .\templates\blog.html:70
+msgid "About us"
+msgstr "BIZ HAQIMIZDA"
 
 #: .\templates\checkout.html:10 .\templates\checkout.html:13
 #: .\templates\checkout2.html:11 .\templates\checkout2.html:14
@@ -1455,9 +1467,6 @@ msgstr "Tanlanganlar"
 
 #~ msgid "We Are"
 #~ msgstr "Biz"
-
-#~ msgid "Our Contacts"
-#~ msgstr "Barcha Contactlar"
 
 #~ msgid "Ссылка на подтверждения отправлено на ваш email"
 #~ msgstr "Tasdiqlash havolasi sizning elektron pochtangizga yuborildi"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-20 16:42+0500\n"
+"POT-Creation-Date: 2021-09-20 16:48+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -578,6 +578,18 @@ msgid ""
 "<strong>Note:</strong> you can still <a href=\"%(email_url)s\">change your e-"
 "mail address</a>."
 msgstr ""
+
+#: .\templates\blog.html:30
+msgid "Our Company"
+msgstr "О компании"
+
+#: .\templates\blog.html:48
+msgid "Why Choose Us"
+msgstr "Почему выбрать нас"
+
+#: .\templates\blog.html:70
+msgid "About us"
+msgstr "О НАС"
 
 #: .\templates\checkout.html:10 .\templates\checkout.html:13
 #: .\templates\checkout2.html:11 .\templates\checkout2.html:14
@@ -1465,9 +1477,6 @@ msgstr "Избранные"
 
 #~ msgid "We Are"
 #~ msgstr "Мы"
-
-#~ msgid "Our Contacts"
-#~ msgstr "контакт"
 
 #, fuzzy
 #~| msgid "Account Activation Resent"
