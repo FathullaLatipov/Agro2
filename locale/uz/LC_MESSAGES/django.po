@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-20 16:48+0500\n"
+"POT-Creation-Date: 2021-09-20 17:18+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -659,7 +659,7 @@ msgstr "Hammasi bolib"
 #: .\templates\shopping-cart.html:81 .\templates\shopping-cart.html:82
 #: .\templates\single-product.html:42
 msgid "som"
-msgstr ""
+msgstr "UZS"
 
 #: .\templates\contact.html:10 .\templates\layouts\footer.html:354
 msgid "Contacts"
@@ -797,15 +797,15 @@ msgstr "Bolimlar"
 msgid "Latest Products"
 msgstr "Mahsulotramiz"
 
-#: .\templates\index.html:461
+#: .\templates\index.html:463
 msgid "Hours"
 msgstr "Soat"
 
-#: .\templates\index.html:487
+#: .\templates\index.html:489
 msgid "Minutes"
 msgstr "Daqiqa"
 
-#: .\templates\index.html:513
+#: .\templates\index.html:515
 msgid "Seconds"
 msgstr "Soniya"
 
@@ -1303,7 +1303,7 @@ msgstr "Baland"
 
 #: .\templates\shop.html:137
 msgid "sum"
-msgstr ""
+msgstr "UZS"
 
 #: .\templates\shop.html:170 .\templates\single-product.html:262
 msgid "Added"
