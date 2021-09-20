@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-20 17:18+0500\n"
+"POT-Creation-Date: 2021-09-20 21:00+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -569,15 +569,15 @@ msgid ""
 "mail address</a>."
 msgstr ""
 
-#: .\templates\blog.html:30
+#: .\templates\blog.html:36
 msgid "Our Company"
 msgstr "Bizning kompaniya"
 
-#: .\templates\blog.html:48
+#: .\templates\blog.html:54
 msgid "Why Choose Us"
 msgstr "Nega bizni tanlaysiz"
 
-#: .\templates\blog.html:70
+#: .\templates\blog.html:76
 msgid "About us"
 msgstr "BIZ HAQIMIZDA"
 
@@ -753,8 +753,8 @@ msgstr "Sabzavotlar importi"
 msgid "Import parsley"
 msgstr "Ko'katlar importi"
 
-#: .\templates\index.html:197 .\templates\index.html:321
-#: .\templates\index.html:324
+#: .\templates\index.html:197 .\templates\index.html:322
+#: .\templates\index.html:325
 msgid "Dried fruits"
 msgstr "Quruq mahsulotlar"
 
@@ -764,12 +764,12 @@ msgid "Fruits"
 msgstr "Mevalar"
 
 #: .\templates\index.html:201 .\templates\index.html:291
-#: .\templates\index.html:295
+#: .\templates\index.html:296
 msgid "Vegetables"
 msgstr "Sabzavotlar"
 
-#: .\templates\index.html:203 .\templates\index.html:307
-#: .\templates\index.html:310
+#: .\templates\index.html:203 .\templates\index.html:308
+#: .\templates\index.html:311
 msgid "Parsley"
 msgstr "Ko'katlar"
 
@@ -793,7 +793,7 @@ msgstr "Qaytarish siyosati"
 msgid "Category"
 msgstr "Bolimlar"
 
-#: .\templates\index.html:345
+#: .\templates\index.html:346
 msgid "Latest Products"
 msgstr "Mahsulotramiz"
 
@@ -880,21 +880,25 @@ msgstr ""
 msgid "Removed from wishlist"
 msgstr ""
 
-#: .\templates\neo.html:31
+#: .\templates\neo.html:37
 msgid "Convenient payment system"
 msgstr "Qulay to'lov tizimi"
 
-#: .\templates\neo.html:49
+#: .\templates\neo.html:55 .\templates\neopage\neo1.html:34
+#: .\templates\neopage\neo1.html:52 .\templates\neopage\neo2.html:51
+#: .\templates\neopage\neo3.html:49
 msgid "Convenient location"
 msgstr "Qulay joylashuv"
 
-#: .\templates\neo.html:67
-#, fuzzy
-#| msgid " technical support 24/7"
+#: .\templates\neo.html:73 .\templates\neopage\neo1.html:70
+#: .\templates\neopage\neo2.html:33 .\templates\neopage\neo2.html:69
+#: .\templates\neopage\neo3.html:67
 msgid "technical support 24/7"
 msgstr "texnik qo'llab-quvvatlash 24/7"
 
-#: .\templates\neo.html:85
+#: .\templates\neo.html:91 .\templates\neopage\neo1.html:88
+#: .\templates\neopage\neo2.html:87 .\templates\neopage\neo3.html:33
+#: .\templates\neopage\neo3.html:85
 msgid "Fast delivery"
 msgstr "Tez etkazib berish"
 

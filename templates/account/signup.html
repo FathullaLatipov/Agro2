@@ -17,13 +17,13 @@
     <div class="col-md-6" style="margin-top:13%">
       <form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
   {% csrf_token %}
-  <label for="id_username">{% trans 'Username' %}:</label>
+  <label for="id_username" style="color:#000;font-weight:500">{% trans 'Username' %}:</label>
   <input type="text" name="username" class="form-control" placeholder="{% trans 'Username' %}" style="font-size:1.5rem;box-shadow:3px 2px 1px 1px #888;margin-top:4px" autocomplete="username"  minlength="3" maxlength="150" required id="id_username">
-   <label for="id_email">{% trans 'Email' %}:</label>
+   <label for="id_email" style="color:#000;margin-top:9px;font-weight:500">{% trans 'Email' %}:</label>
   <input type="text" name="email" class="form-control" placeholder="{% trans 'Email address' %}" style="font-size:1.5rem;box-shadow:3px 2px 1px 1px #888;margin-top:4px" autocomplete="email"   required id="id_email">
-    <label for="id_password1">{% trans 'Password' %}:</label>
+    <label for="id_password1" style="color:#000;margin-top:9px;font-weight:500">{% trans 'Password' %}:</label>
   <input type="password" name="password1" class="form-control" placeholder="{% trans 'Password' %}" style="font-size:1.5rem;box-shadow:3px 2px 1px 1px #888;margin-top:4px" autocomplete="new-password"  required id="id_password1">
-    <label for="id_password2">{% trans 'Confirm password' %}:</label>
+    <label for="id_password2" style="color:#000;margin-top:9px;font-weight:500">{% trans 'Confirm password' %}:</label>
         <br>
   <input type="password" name="password2" class="form-control" placeholder="{% trans 'Confirm password' %}" style="font-size:1.5rem;box-shadow:3px 2px 1px 1px #888;margin-top:4px" autocomplete="new-password"  required id="id_password2">
   <br><button type="submit" class="btn btn-outline-primary fa-1x">{% trans "Sign Up" %} &raquo;</button>

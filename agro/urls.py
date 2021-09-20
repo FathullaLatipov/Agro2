@@ -4,6 +4,8 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include
 
+from neo.views import NeonTemplateView, NeonsTemplateView, Neon1TemplateView
+
 urlpatterns = [
     path('ckeditor/', include('ckeditor_uploader.urls')),
 
@@ -17,6 +19,9 @@ urlpatterns += i18n_patterns(
     path('profile/', include('users.urls', namespace='profile')),
     path('products/', include('products.urls', namespace='products')),
     path('neo/', include('neo.urls', namespace='neo'),),
+    path('neo1/', NeonTemplateView.as_view()),
+    path('neo2/', NeonsTemplateView.as_view()),
+    path('neo3/', Neon1TemplateView.as_view()),
     path('', include('pages.urls', namespace='contact')),
 )
 
