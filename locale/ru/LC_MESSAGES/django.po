@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-20 21:00+0500\n"
+"POT-Creation-Date: 2021-09-26 18:10+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -587,7 +587,7 @@ msgstr "О компании"
 msgid "Why Choose Us"
 msgstr "Почему выбрать нас"
 
-#: .\templates\blog.html:76
+#: .\templates\blog.html:74
 msgid "About us"
 msgstr "О НАС"
 
@@ -894,23 +894,40 @@ msgstr "Удалено из избранных"
 msgid "Convenient payment system"
 msgstr "Удобная платежная система"
 
-#: .\templates\neo.html:55 .\templates\neopage\neo1.html:34
-#: .\templates\neopage\neo1.html:52 .\templates\neopage\neo2.html:51
-#: .\templates\neopage\neo3.html:49
+#: .\templates\neo.html:38
+msgid ""
+"Для того, чтобы запросить возврат денежных средств за определенный продукт "
+"обратитесь на info@agro.com . Все заявки рассматриваются в течении 72 часов, "
+"кроме выходных и праздничных дней."
+msgstr ""
+
+#: .\templates\neopage\neo1.html:34
 msgid "Convenient location"
 msgstr "Удобная локация"
 
-#: .\templates\neo.html:73 .\templates\neopage\neo1.html:70
-#: .\templates\neopage\neo2.html:33 .\templates\neopage\neo2.html:69
-#: .\templates\neopage\neo3.html:67
+#: .\templates\neopage\neo1.html:35
+msgid ""
+"Удобная локация Мы находимся в удобном вам местоположении. Доставляем ваш "
+"заказ быстро и качественно."
+msgstr ""
+
+#: .\templates\neopage\neo2.html:33
 msgid "technical support 24/7"
 msgstr "Тех.поддержка 24/7"
 
-#: .\templates\neo.html:91 .\templates\neopage\neo1.html:88
-#: .\templates\neopage\neo2.html:87 .\templates\neopage\neo3.html:33
-#: .\templates\neopage\neo3.html:85
+#: .\templates\neopage\neo2.html:34
+msgid ""
+"Мы оказываем техническую поддержку 24/7, помогающий вам более "
+"профессионально решит вашу проблему"
+msgstr ""
+
+#: .\templates\neopage\neo3.html:33
 msgid "Fast delivery"
 msgstr "Быстрая доставка"
+
+#: .\templates\neopage\neo3.html:34
+msgid "Доставляем быстро и качественно. В каждых штатах находится наши склады."
+msgstr ""
 
 #: .\templates\openid\login.html:9
 msgid "OpenID Sign In"

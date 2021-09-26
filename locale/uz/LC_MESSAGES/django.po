@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-20 21:00+0500\n"
+"POT-Creation-Date: 2021-09-26 18:10+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -577,7 +577,7 @@ msgstr "Bizning kompaniya"
 msgid "Why Choose Us"
 msgstr "Nega bizni tanlaysiz"
 
-#: .\templates\blog.html:76
+#: .\templates\blog.html:74
 msgid "About us"
 msgstr "BIZ HAQIMIZDA"
 
@@ -874,33 +874,59 @@ msgstr "CONTACTLAR"
 
 #: .\templates\layouts\product_block.html:268
 msgid "Added to wishlist"
-msgstr ""
+msgstr "Masulotlar qoshildi"
 
 #: .\templates\layouts\product_block.html:276
 msgid "Removed from wishlist"
-msgstr ""
+msgstr "Mahsulotlar olinib tashlandi"
 
 #: .\templates\neo.html:37
 msgid "Convenient payment system"
 msgstr "Qulay to'lov tizimi"
 
-#: .\templates\neo.html:55 .\templates\neopage\neo1.html:34
-#: .\templates\neopage\neo1.html:52 .\templates\neopage\neo2.html:51
-#: .\templates\neopage\neo3.html:49
+#: .\templates\neo.html:38
+msgid ""
+"Для того, чтобы запросить возврат денежных средств за определенный продукт "
+"обратитесь на info@agro.com . Все заявки рассматриваются в течении 72 часов, "
+"кроме выходных и праздничных дней."
+msgstr ""
+"Muayyan mahsulot uchun pulni qaytarishni talab qilishinfo@agro.com bilan "
+"bog'laning. Barcha arizalar 72 soat ichida ko'rib chiqiladi,dam olish "
+"kunlari va bayramlardan tashqari."
+
+#: .\templates\neopage\neo1.html:34
 msgid "Convenient location"
 msgstr "Qulay joylashuv"
 
-#: .\templates\neo.html:73 .\templates\neopage\neo1.html:70
-#: .\templates\neopage\neo2.html:33 .\templates\neopage\neo2.html:69
-#: .\templates\neopage\neo3.html:67
+#: .\templates\neopage\neo1.html:35
+msgid ""
+"Удобная локация Мы находимся в удобном вам местоположении. Доставляем ваш "
+"заказ быстро и качественно."
+msgstr ""
+"Qulay manzil Biz siz uchun qulay bo'lgan joydamiz. Siznikini etkazib beramiz."
+"tez va sifatli buyurtma bering."
+
+#: .\templates\neopage\neo2.html:33
 msgid "technical support 24/7"
 msgstr "texnik qo'llab-quvvatlash 24/7"
 
-#: .\templates\neo.html:91 .\templates\neopage\neo1.html:88
-#: .\templates\neopage\neo2.html:87 .\templates\neopage\neo3.html:33
-#: .\templates\neopage\neo3.html:85
+#: .\templates\neopage\neo2.html:34
+msgid ""
+"Мы оказываем техническую поддержку 24/7, помогающий вам более "
+"профессионально решит вашу проблему"
+msgstr ""
+"Biz sizga ko'proq yordam berish uchun 24/7 texnik yordam "
+"ko'rsatamizMuammoingizni professional tarzda hal qiladi"
+
+#: .\templates\neopage\neo3.html:33
 msgid "Fast delivery"
 msgstr "Tez etkazib berish"
+
+#: .\templates\neopage\neo3.html:34
+msgid "Доставляем быстро и качественно. В каждых штатах находится наши склады."
+msgstr ""
+"Biz tez va samarali etkazib beramiz. Bizning omborlarimiz har bir shtatda "
+"joylashgan."
 
 #: .\templates\openid\login.html:9
 #, fuzzy
