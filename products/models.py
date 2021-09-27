@@ -82,7 +82,15 @@ class WeightModel(models.Model):
 
 class ProductModel(models.Model):
     title = models.CharField(max_length=90, verbose_name=_('title'))
-    image = models.ImageField(upload_to='products', verbose_name=_('image'))
+    image = models.FileField(upload_to='products', verbose_name=_('image'))
+    image22 = models.FileField(upload_to='products',  null=True, blank=True, verbose_name=_('image22'))
+    image33 = models.FileField(upload_to='products', null=True, blank=True,  verbose_name=_('image33'))
+    image44 = models.FileField(upload_to='products/textures', null=True, blank=True,  verbose_name=_('image44'))
+    image55 = models.FileField(upload_to='products/textures', null=True, blank=True,  verbose_name=_('image55'))
+    image66 = models.FileField(upload_to='products/textures', null=True, blank=True,  verbose_name=_('image66'))
+    image77 = models.FileField(upload_to='products', null=True, blank=True,  verbose_name=_('image77'))
+    image88 = models.FileField(upload_to='products', null=True, blank=True,  verbose_name=_('image88'))
+    image99 = models.FileField(upload_to='products', null=True, blank=True,  verbose_name=_('image99'))
     price = models.DecimalField(max_digits=9, decimal_places=3, verbose_name=_('price'))
     sku = models.IntegerField(verbose_name=_('sku'), null=True)
     discount = models.PositiveIntegerField(default=0, verbose_name=_('discount'))

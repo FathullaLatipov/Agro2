@@ -1,0 +1,11 @@
+Model Information:
+* title:	Apple
+* source:	https://sketchfab.com/3d-models/apple-315c36aceae940a0ac7325949c97db93
+* author:	Meerschaum Digital (https://sketchfab.com/meerschaumdigital)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Apple" (https://sketchfab.com/3d-models/apple-315c36aceae940a0ac7325949c97db93) by Meerschaum Digital (https://sketchfab.com/meerschaumdigital) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
