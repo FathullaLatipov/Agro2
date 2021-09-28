@@ -63,39 +63,14 @@
                             <div class="col-md-6 form-group p_star">
                                 <span>{% trans 'First name' %}</span>
                                 <input type="text" class="form-control" name="first_name" value="{{ form.instance.first_name|default:'' }}">
+                                <br>
+                                <img class="w-100" style="height:200px"  src="https://www.spot.uz/media/img/2018/01/ULpS3A15155202745216_l.jpg" alt="">
                             </div>
                             <div class="col-md-6 form-group p_star">
                                  <span>{% trans 'Last name' %}</span>
                                 <input type="text" class="form-control"  name="last_name" value="{{ form.instance.last_name|default:'' }}">
-                            </div>
-                            <div class="col-md-6 form-group p_star">
-                                <span>{% trans 'Phone number' %}</span>
-<!--                                <input type="text" class="form-control" name="phone" value="{{ form.instance.phone }}">-->
-                                <input type="text" class="form-control" value="{{ form.instance.phone|default:'' }}" name="phone" >
-                            </div>
-                            <div class="col-md-6 form-group p_star">
-                                <span>{% trans 'Email Address' %}</span>
-                                <input type="text" class="form-control"  name="email" value="{{ form.instance.email|default:'' }}">
-                            </div>
-                              <div class="col-md-12 form-group p_star">
-                                  <span>{% trans 'Country' %}</span>
-                                <input type="text" class="form-control" name="country" value="{{ form.instance.country|default:'' }}">
-                            </div>
-                            <div class="col-md-12 form-group p_star">
-                                <span>{% trans 'Country/State' %}</span>
-                                <input type="text" class="form-control"  name="state" value="{{ form.instance.state|default:'' }}">
-                            </div>
-                            <div class="col-md-12 form-group p_star">
-                                <span>{% trans 'Postcode/ZIP' %}</span>
-                                <input type="text" class="form-control" id="add2" name="zip" value="{{ form.instance.zip|default:'' }}">
-                            </div>
-                            <div class="col-md-12 form-group p_star">
-                                <span>{% trans 'Town/City' %}</span>
-                                <input type="text" class="form-control" id="city" name="city" value="{{ form.instance.city|default:'' }}">
-                            </div>
-                            <div class="col-md-12 form-group">
-                                <span>{% trans 'Address' %}</span>
-                                <input type="text" class="form-control" id="zip" name="address" value="{{ form.instance.address|default:'' }}">
+                                <br>
+                                <img  class="w-100" src="https://i0.wp.com/nuz.uz/uploads/posts/2020-02/1581961006_file_5c9cbecbc60125.147006501553776331.jpg?ssl=1" alt="">
                             </div>
                             <button type="submit" style="font-size:20px;margin:auto;width:200px" class="btn primary-btn ">{% trans 'Purchase' %}</button>
                         </form>

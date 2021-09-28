@@ -82,7 +82,7 @@ class WeightModel(models.Model):
 
 class ProductModel(models.Model):
     title = models.CharField(max_length=90, verbose_name=_('title'))
-    image = models.FileField(upload_to='products', verbose_name=_('image'))
+    image = models.FileField(upload_to='products', null=True, verbose_name=_('image'))
     image22 = models.FileField(upload_to='products',  null=True, blank=True, verbose_name=_('image22'))
     image33 = models.FileField(upload_to='products', null=True, blank=True,  verbose_name=_('image33'))
     image44 = models.FileField(upload_to='products/textures', null=True, blank=True,  verbose_name=_('image44'))
@@ -135,6 +135,7 @@ class ProductModel(models.Model):
     class Meta:
         verbose_name = _('product')
         verbose_name_plural = _('products')
+
 
 
 class CommentModel(models.Model):

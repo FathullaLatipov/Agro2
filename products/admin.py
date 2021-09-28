@@ -38,8 +38,6 @@ class ProductTagModelAdmin(admin.ModelAdmin):
     list_filter = ['created_at']
 
 
-
-
 @admin.register(WidthModel)
 class WidthModelAdmin(MyTranslationAdmin):
     list_display = ['id', 'width', 'created_at']
