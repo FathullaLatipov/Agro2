@@ -1,0 +1,11 @@
+Model Information:
+* title:	Pear - itSeez3D
+* source:	https://sketchfab.com/3d-models/pear-itseez3d-d32f3f2eedf2476fba8c6b4dce14cbc5
+* author:	Moshe Caine (https://sketchfab.com/mosheca)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Pear - itSeez3D" (https://sketchfab.com/3d-models/pear-itseez3d-d32f3f2eedf2476fba8c6b4dce14cbc5) by Moshe Caine (https://sketchfab.com/mosheca) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

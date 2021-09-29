@@ -1,0 +1,91 @@
+{% load mytags %}
+{% load i18n %}
+{% load static %}
+{% block content %}
+
+<div class="flip-card" id="flip-product" style="border-radius:10px">
+  <div class="flip-card-inner" style="width:250px;height:250px;border-radius:10px">
+        <div class="flip-card-front" style="border-radius:30px">
+            <img src="/static/img/fruits/apricot-5.jpg"  style="width:200px;border-radius:20px;padding-top:40px;background:#fff">
+        </div>
+        <div class="flip-card-back" style="border-radius:20px">
+            <h2 style="color:#000">Product Name</h2>
+            <div class="texttt">
+                <p class="base_text"
+                   style="color:#000;max-width:230px;width:100%;margin:0 auto;  ">
+                    Product title</p>
+            </div>
+            <div class="container">
+                <div class="prd-bottom" style="display:flex;align-items:center;justify-content:center;margin-top:20%;padding:10px">
+                        <a href="#" class="social-info p-4 m-3">
+                                            <span class="ti-bag" style="background-color:#EB5757;padding:10px;border-radius:50%">
+                                                    <img style="width:20px;margin-top:-4px" alt="">
+                                            </span>
+                        <p class="hover-text" style="padding:7px;color:#222; font-size:22px font-weight:600">
+                        </p>
+                    </a>
+
+<!--                    <a style="color:#fff;font-weight:500;border-radius:50px;padding:10px" href="#"-->
+<!--                       class="social-info">-->
+<!--                        <span class="ti-bag" style="background-color:#EB5757;padding:10px;border-radius:50%"></span>-->
+<!--                        <p class="hover-text" style="padding:7px;color:#222; font-size:22px font-weight:600">-->
+<!--                        </p>-->
+<!--                    </a>-->
+
+                    <a href="#" class="social-info">
+                                            <span class="lnr" style="background-color:#EB5757;padding:10px;border-radius:50%">
+                                                    <img src="{% static 'img/features/love.png' %}" style="width:20px;margin-top:-4px" alt="">
+                                            </span>
+                        <p class="hover-text" style="padding:7px;color:#222; font-size:22px font-weight:600">
+                        </p>
+                    </a>
+
+                    <a href="#">
+                            <span class="lnr lnr-move"
+                                  style="background-color:#EB5757;padding:10px;border-radius:50%;color:#fff">asd</span>
+                        <p class="hover-text" style="padding:7px;color:#222; font-size:22px font-weight:600">
+
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    function add_to_wishlist(element, pk) {
+        $.getJSON('/en/products/' + "wishlist/" + pk, function (data) {
+            if (!data.status) {
+               $('#message').append(`<div style="padding:5px">
+                        <div id="inner-message" class="alert alert-error">
+                            <button type="button" class="close" data-dismiss="alert">&times;</button>
+                            Error
+                        </div>
+                    </div>`);
+            } else {
+                if (data.added) {
+                    $('#message').append(`<div style="padding:5px">
+                        <div id="inner-message" class="alert alert-success">
+                            <button type="button" class="close" data-dismiss="alert">&times;</button>
+                            Added to wishlist
+                        </div>
+                    </div>`);
+                    element.innerHTML = '<span class="lnr" style="background-color:#EB5757;padding:10px;border-radius:50%"> <img src="{% static 'img/features/like.png' %}" style="width:20px;margin-top:-4px" alt=""> </span>'
+                } else {
+                    $('#message').append(`<div style="padding:5px">
+                        <div id="inner-message" class="alert alert-success">
+                            <button type="button" class="close" data-dismiss="alert">&times;</button>
+                            Removed from wishlist
+                        </div>
+                    </div>`);
+                    element.innerHTML = '<span class="lnr" style="background-color:#EB5757;padding:10px;border-radius:50%"> <img src="{% static 'img/features/love.png' %}" style="width:20px;margin-top:-4px" alt=""> </span>'
+                }
+                  $('#wishlist_length').html(data.wishlist_len);
+            }
+        });
+    }
+
+</script>
+{% endblock %}
